@@ -23,7 +23,7 @@
     <xsl:call-template name="cani">
       <xsl:with-param name="col"  select="8"/>
     </xsl:call-template>
-    <xsl:text>,"opera":</xsl:text>
+    <xsl:text>,"op_mobile":</xsl:text>
     <xsl:call-template name="cani">
       <xsl:with-param name="col"  select="9"/>
     </xsl:call-template>
