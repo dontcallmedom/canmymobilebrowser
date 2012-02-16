@@ -34,8 +34,8 @@ for feature,sourcelist in featuremap.iteritems():
             elif localdata[feature].has_key("*"):
                 mergeddata[feature][b] = []
     if len(sourcelist) > 0:
-        if not caniuse["data"].has_key(sourcelist[0]):
-            sys.stderr.write("Couldn't find feature %s in canIuse data\n" % sourcelist[0])
+        if sourcelist[0] and not caniuse["data"].has_key(sourcelist[0]):
+            sys.stderr.write("Couldn't find feature %s (%s) in canIuse data\n" % (sourcelist[0], feature))
             continue
         for b in browsers:
             try:
