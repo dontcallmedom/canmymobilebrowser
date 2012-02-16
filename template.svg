@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="237.30087"
+   height="157.75708"
+   version="1.1">
+    <image
+       y="103"
+       x="0"
+       id="blackberry"
+       xlink:href="blackberry.jpg"
+       height="49.541283"
+       width="60" />
+    <image
+       y="0"
+       x="89"
+       id="android"
+       xlink:href="android.png"
+       height="69.900002"
+       width="60" />
+    <image
+       y="98"
+       x="89"
+       id="ie"
+       xlink:href="ie.png"
+       height="60"
+       width="60" />
+    <image
+       y="8"
+       x="0"
+       id="safari"
+       xlink:href="safari.jpg"
+       height="60"
+       width="60" />
+    <image
+       y="98"
+       x="178"
+       id="firefox"
+       xlink:href="firefox.png"
+       height="60"
+       width="60" />
+    <image
+       y="8.8"
+       x="178"
+       id="opera"
+       xlink:href="opera.png"
+       height="60"
+       width="60" />
+</svg>
