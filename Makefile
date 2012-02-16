@@ -1,3 +1,5 @@
+all: data.json
+
 caniuse-data.json:
 	wget -N https://github.com/Fyrd/caniuse/raw/master/data.json -O $@
 
@@ -8,4 +10,4 @@ mobilehtml5-data.json:
 	rm mobilehtml5.html
 
 data.json: caniuse-data.json mobilehtml5-data.json local-data.json merge-data.py
-	python merge-data.py > $@
+	python merge-data.py | json_xs> $@
