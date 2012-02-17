@@ -1,5 +1,8 @@
 {
 "inputaccept": {"android": "3.0:p", "firefox": "9:p"},
+"getusermedia": {"*":0},
+"webaudio": {"*":0},
+"streamproc": {"*":0},
 "mediaqueries": {"blackberry": "4.7.1"},
 "inputdate": {"blackberry": "4.7.1"},
 "inputtext": {"blackberry": "4.7.1", "ie":"10", "op_mob": "11", "firefox":"4"},
