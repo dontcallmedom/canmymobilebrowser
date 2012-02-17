@@ -47,10 +47,10 @@ if ($featuredata[$_GET["name"]]) {
    width="260.30087"
    height="160.75708"
    version="1.1">
-     <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.5}</style>
+     <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.8}</style>
 <?php
      foreach($browsers as $id=>$data) {
-       if ($featuredata[$_GET["name"]][$data["id"]]) {
+       if (is_array($featuredata[$_GET["name"]][$data["id"]])) {
 	 if (!count($featuredata[$_GET["name"]][$data["id"]])) {
 	   $minVersion = $minPartialVersion = 0;
 	 } else if ($featuredata[$_GET["name"]][$data["id"]][1] == "y") {
@@ -63,11 +63,15 @@ if ($featuredata[$_GET["name"]]) {
 	     $supp = array("text" => array(attr => array("style" => "fill:red;font-size:40px;text-anchor:middle;"), "content" => "X", "offset" => array("y" => 10)));
 	     $class ="not";
 	   } else {
-	     $supp = array("text" => array(attr => array("style" => "fill:#a70;font-size:20px;text-anchor:middle;"), "content" => $minPartialVersion . "+", "offset" => array("x" => 20, "y" => 30)));
+	     $supp = array(
+			   "rect" => array(attr => array("style" => "fill: #ff0; opacity: 0.8;", "width" => 60, "height" => 22), "offset" => array("x" => -30)),
+			   "text" => array(attr => array("style" => "fill:#000;font-size:20px;text-anchor:middle;"), "content" => $minPartialVersion . "+", "offset" => array("y" => 15)));
 	     $class ="partial";
 	   }
 	 } else {
-	   $supp = array("text" => array(attr => array("style" => "font-size:20px;text-anchor:middle;"), "content" => $minVersion . "+", "offset" => array("x" => "20", "y" => 30)));
+	   $supp = array(
+			 "rect" => array(attr => array("style" => "fill: #0f0; opacity: 0.8;", "width" => 60, "height" => 22), "offset" => array("x"=>-30)),
+			 "text" => array(attr => array("style" => "font-size:20px;text-anchor:middle;"), "content" => $minVersion . "+", "offset" => array( "y" => 15)));
 	   $class ="";
 	 }
        } else {
