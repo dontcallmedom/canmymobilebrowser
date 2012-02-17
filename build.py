@@ -98,8 +98,8 @@ for feature,sourcelist in featuremap.iteritems():
             className = "unknown"
             text = "Supported in %s unknown" % (bData["name"])
             label = "<text x='%s' y='%s' font-size='40px' fill='blue' text-anchor='middle'>?</text>" % (bData["x"] + bData["width"]/2, bData["y"] + bData["height"]/2 + 15)
-
-        image.write("<image xlink:href='../%s' class='%s' x='%s' y='%s' width='%s' height='%s'>%s</image>" %(bData["url"], className, bData["x"], bData["y"], bData["width"], bData["height"], text))
+        image.write("<g><title>%s</title></g>" %text)
+        image.write("<image xlink:href='../%s' class='%s' x='%s' y='%s' width='%s' height='%s'></image>" %(bData["url"], className, bData["x"], bData["y"], bData["width"], bData["height"]))
         image.write(label)
     image.write("</svg>");
     image.close()
