@@ -20,7 +20,7 @@
 "mediacapabilities":[],
 "mediaqueries":["css-mediaqueries"],
 "css-device-adapt":[],
-"inputdate": ["input-datetime", "HTML5 Form New Controls"],
+"inputdate": [null, "HTML5 Form New Controls"],
 "inputtext": [],
 "inputpattern": [],
 "inputhint": [],
