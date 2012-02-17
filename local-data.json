@@ -1,5 +1,7 @@
 {
 "inputaccept": {"android": "3.0:p", "firefox": "9:p"},
+"filewrite": {"*":0},
+"filesystem": {"*":0},
 "getusermedia": {"*":0},
 "webaudio": {"*":0},
 "streamproc": {"*":0},
