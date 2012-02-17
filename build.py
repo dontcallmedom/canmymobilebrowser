@@ -73,9 +73,9 @@ for feature,sourcelist in featuremap.iteritems():
     image.write("""<svg
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   width="130"
-   height="80"
-   viewBox="0 0 260 160"
+   width="95"
+   height="70"
+   viewBox="0 0 190 140"
    version="1.1">
      <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.8}</style>""")
     for b in browsers:
