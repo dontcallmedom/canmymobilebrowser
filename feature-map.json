@@ -34,7 +34,7 @@
 "webstorage":["namevalue-storage", "Web storage"],
 "filereader":["filereader" , "File API"],
 "filewrite":[],
-"filesytem":["filesystem"],
+"filesystem":["filesystem"],
 "indexeddb":["indexeddb", "IndexedDB"],
 "websql":["sql-storage", "Web SQL storage"],
 "contacts":[],
