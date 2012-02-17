@@ -1,5 +1,5 @@
 <?php
-$featuredata = json_decode(file_get_contents("caniuse-data.json"), true);
+$featuredata = json_decode(file_get_contents("data.json"), true);
 $browsers = array(
 		  "opera" => array("id"=>"op_mob",
 				   "x"=>130,
@@ -50,35 +50,33 @@ if ($featuredata[$_GET["name"]]) {
      <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.5}</style>
 <?php
      foreach($browsers as $id=>$data) {
-     if ($featuredata[$_GET["name"]]["stats"][$data["id"]]) {
-       $minVersion = 0;
-       $minPartialVersion = 0;
-       foreach($featuredata[$_GET["name"]]["stats"][$data["id"]] as $version=>$support) {
-	 if ($support == "y") {
-	   $minVersion = ($minVersion ? min($minVersion, $version) : $version);
-	 } else if ($support == "a") {
-	   $minPartialVersion = ($minPartialVersion ? min($minPartialVersion, $version) : $version);
+       if ($featuredata[$_GET["name"]][$data["id"]]) {
+	 if (!count($featuredata[$_GET["name"]][$data["id"]])) {
+	   $minVersion = $minPartialVersion = 0;
+	 } else if ($featuredata[$_GET["name"]][$data["id"]][1] == "y") {
+	   $minVersion = $featuredata[$_GET["name"]][$data["id"]][0];
+	 } else if ($featuredata[$_GET["name"]][$data["id"]][1] == "p") {
+	   $minPartialVersion = $featuredata[$_GET["name"]][$data["id"]][0];
 	 }
-       }
-       if ($minVersion == 0) {
-	 if ($minPartialVersion == 0) {
-	   $supp = array("text" => array(attr => array("style" => "fill:red;font-size:40px;text-anchor:middle;"), "content" => "X", "offset" => array("y" => 10)));
-	   $class ="not";
+	 if ($minVersion == 0) {
+	   if ($minPartialVersion == 0) {
+	     $supp = array("text" => array(attr => array("style" => "fill:red;font-size:40px;text-anchor:middle;"), "content" => "X", "offset" => array("y" => 10)));
+	     $class ="not";
+	   } else {
+	     $supp = array("text" => array(attr => array("style" => "fill:#a70;font-size:20px;text-anchor:middle;"), "content" => $minPartialVersion . "+", "offset" => array("x" => 20, "y" => 30)));
+	     $class ="partial";
+	   }
 	 } else {
-	   $supp = array("text" => array(attr => array("style" => "fill:#a70;font-size:20px;text-anchor:middle;"), "content" => $minPartialVersion . "+", "offset" => array("x" => 20, "y" => 30)));
-	   $class ="partial";
+	   $supp = array("text" => array(attr => array("style" => "font-size:20px;text-anchor:middle;"), "content" => $minVersion . "+", "offset" => array("x" => "20", "y" => 30)));
+	   $class ="";
 	 }
        } else {
-	 $supp = array("text" => array(attr => array("style" => "font-size:20px;text-anchor:middle;"), "content" => $minVersion . "+", "offset" => array("x" => "20", "y" => 30)));
-	 $class ="";
+	 $supp = array("text" => array(attr => array("style" => "fill:blue;font-size:40px;text-anchor:middle;"), "content" => "?", "offset" => array("y" => 10)));
+	 $class="unknown";
        }
-     } else {
-       $supp = array("text" => array(attr => array("style" => "fill:blue;font-size:40px;text-anchor:middle;"), "content" => "?", "offset" => array("y" => 10)));
-       $class="unknown";
-     }
-     echo "<image class='".$class."' xlink:href='".$data["url"]."' x='".$data["x"]."' y='".$data["y"]."' width='".$data["width"]."' height='".$data["height"]."' />\n";
-     foreach ($supp as $el=>$values) {
-       echo "<".$el;
+       echo "<image class='".$class."' xlink:href='".$data["url"]."' x='".$data["x"]."' y='".$data["y"]."' width='".$data["width"]."' height='".$data["height"]."' />\n";
+       foreach ($supp as $el=>$values) {
+	 echo "<".$el;
        foreach($values["attr"]  as $attr=>$value) {
 	 echo " $attr='".$value."'";
        }
@@ -89,9 +87,9 @@ if ($featuredata[$_GET["name"]]) {
        } else {
 	 echo "/>\n";
        }
+       }
      }
-  }
-  echo "</svg>";
+   echo "</svg>";
 } else {
   echo "Pick a feature";
 }
