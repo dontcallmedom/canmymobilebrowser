@@ -1,5 +1,5 @@
 {
-"inputaccept": {"android": "3.0:p", "firefox": "9:p"},
+"inputaccept": {"android": "3.0:p", "firefox": "9:p", "*":0},
 "filewrite": {"*":0},
 "filesystem": {"*":0},
 "getusermedia": {"*":0},
