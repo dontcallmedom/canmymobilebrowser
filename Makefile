@@ -9,5 +9,5 @@ mobilehtml5-data.json:
 	xsltproc extract-mobilehtml5-data.xsl mobilehtml5.html |json_xs > $@
 	rm mobilehtml5.html
 
-data.json: caniuse-data.json mobilehtml5-data.json local-data.json merge-data.py
-	python merge-data.py | json_xs> $@
+data.json: caniuse-data.json mobilehtml5-data.json local-data.json build.py
+	python build.py | json_xs> $@
