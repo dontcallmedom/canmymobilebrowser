@@ -9,7 +9,7 @@
 "css-device-adapt": {"op_mob": "11.1", "*":0},
 "inputdate": {"blackberry": "4.7.1", "ios_saf": "5.0", "firefox": "9:p", "op_mob":"11","ie":0},
 "inputtext": {"blackberry": "4.7.1:p", "ie":"10", "op_mob": "11", "firefox":"4:p", "ios_saf":"5:p", "android":"3:p"},
-"inputpattern": {"opera":"11","blackberry": "4.7.1","firex":"4:p","ie":0},
+"inputpattern": {"op_mob":"11","blackberry": "4.7.1","firefox":"4:p","ie":0, "ios_saf":0, "android":0},
 "inputhint":{"firefox": "4", "op_mob": "11" ,"blackberry": "5", "android":"3","ios_saf":"4","ie":0},
 "datalist": {"blackberry": 0},
 "vibration": {"firefox": "11", "*":0},
