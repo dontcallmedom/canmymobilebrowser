@@ -17,7 +17,7 @@ browsersImages = { "ios_saf" : {"name": "Safari on iOS", "x":0,"y":8,"width":60,
                    "blackberry": {"name": "Blackberry browser", "x":0,"y":75,"width":60,"height":49.5, "url":"blackberry.jpg"},
                    "ie": {"name": "Internet Explorer on Windows Phone", "x":63,"y":70,"width":60,"height":60, "url":"ie.png"},
                    "firefox": {"name": "Firefox mobile", "x":130,"y":70,"width":60,"height":60, "url":"firefox.png"},
-                   "android": {"name": "Android browser", "x":65,"y":0,"width":60,"height":69.9, "url":"android.png"},
+                   "android": {"name": "Android browser", "x":65,"y":0,"width":60,"height":60, "url":"android.png"},
                    "op_mob":  {"name": "Opera mobile", "x":130,"y":8.8,"width":60,"height":60, "url":"opera.png"}
 }
 mergeddata = {}
@@ -42,33 +42,32 @@ for feature,sourcelist in featuremap.iteritems():
             elif localdata[feature].has_key("*"):
                 mergeddata[feature][b] = []
     if len(sourcelist) > 0:
-        if not sourcelist[0]:
-            continue
-        if not caniuse["data"].has_key(sourcelist[0]):
-            sys.stderr.write("Couldn't find feature %s (%s) in canIuse data\n" % (sourcelist[0], feature))
-            continue
-        for b in browsers:
-            min_version = 0
-            min_partial_version = 0
-            unsupported = False
-            if not caniuse["data"][sourcelist[0]]["stats"].has_key(b):
-                continue
-            for version,status in caniuse["data"][sourcelist[0]]["stats"][b].iteritems():
-                if len(str(version).split("-")) > 1:
-                    version = str(version).split("-")[0]                
-                version=float(version)
-                if status[0] == "y":
-                    min_version =  min(min_version,version) if min_version else version
-                elif status == "a":
-                    min_partial_version = min(min_partial_version,version) if min_partial_version else version
-                elif status == "n":
-                    unsupported = True
-            if min_version:
-                mergeddata[feature][b] =  [min_version, "y"]
-            elif min_partial_version:
-                mergeddata[feature][b] =  [min_partial_version, "p" ]
-            elif unsupported:
-                mergeddata[feature][b] = []
+        if sourcelist[0]:
+            if not caniuse["data"].has_key(sourcelist[0]):
+                sys.stderr.write("Couldn't find feature %s (%s) in canIuse data\n" % (sourcelist[0], feature))
+            else:
+                for b in browsers:
+                    min_version = 0
+                    min_partial_version = 0
+                    unsupported = False
+                    if not caniuse["data"][sourcelist[0]]["stats"].has_key(b):
+                        continue
+                    for version,status in caniuse["data"][sourcelist[0]]["stats"][b].iteritems():
+                        if len(str(version).split("-")) > 1:
+                            version = str(version).split("-")[0]                
+                            version=float(version)
+                        if status[0] == "y":
+                            min_version =  min(min_version,version) if min_version else version
+                        elif status == "a":
+                            min_partial_version = min(min_partial_version,version) if min_partial_version else version
+                        elif status == "n":
+                            unsupported = True
+                        if min_version:
+                            mergeddata[feature][b] =  [min_version, "y"]
+                        elif min_partial_version:
+                            mergeddata[feature][b] =  [min_partial_version, "p" ]
+                        elif unsupported:
+                            mergeddata[feature][b] = []
     image = open("images/%s.svg" % feature, "w")
     image.write("""<svg
    xmlns="http://www.w3.org/2000/svg"
