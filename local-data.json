@@ -4,6 +4,7 @@
 "webaudio": {"*":0},
 "streamproc": {"*":0},
 "mediaqueries": {"blackberry": "4.7.1"},
+"css-device-adapt": {"op_mobile": "11.1", "*":0},
 "inputdate": {"blackberry": "4.7.1"},
 "inputtext": {"blackberry": "4.7.1", "ie":"10", "op_mob": "11", "firefox":"4"},
 "inputpattern": {"blackberry": "4.7.1"},
