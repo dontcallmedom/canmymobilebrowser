@@ -34,20 +34,30 @@ for feature,sourcelist in featuremap.iteritems():
             elif localdata[feature].has_key("*"):
                 mergeddata[feature][b] = []
     if len(sourcelist) > 0:
-        if sourcelist[0] and not caniuse["data"].has_key(sourcelist[0]):
+        if not sourcelist[0]:
+            continue
+        if not caniuse["data"].has_key(sourcelist[0]):
             sys.stderr.write("Couldn't find feature %s (%s) in canIuse data\n" % (sourcelist[0], feature))
             continue
         for b in browsers:
-            try:
-                min_version = 0
-                min_partial_version = 0
-                for version,status in caniuse["data"][sourcelist[0]]["stats"][b]:
-                    if status == "y":
-                        min_version =  min(min_version,version) if min_version else version
-                    elif status == "a":
-                        min_partial_version = min(min_partial_version,version) if min_partial_version else version
-                mergeddata[feature][b] =  [min_version, "y"] if min_version else [min_partial_version, "p" ]  if min_partial_version else  []
-            except:
-                pass
+            min_version = 0
+            min_partial_version = 0
+            unsupported = False
+            if not caniuse["data"][sourcelist[0]]["stats"].has_key(b):
+                continue
+            for version,status in caniuse["data"][sourcelist[0]]["stats"][b].iteritems():
+                
+                if status == "y":
+                    min_version =  min(min_version,version) if min_version else version
+                elif status == "a":
+                    min_partial_version = min(min_partial_version,version) if min_partial_version else version
+                elif status == "n":
+                    unsupported = True
+            if min_version:
+                mergeddata[feature][b] =  [min_version, "y"]
+            elif min_partial_version:
+                mergeddata[feature][b] =  [min_partial_version, "p" ]
+            elif unsupported:
+                mergeddata[feature][b] = []
 
 print json.dumps(mergeddata)
