@@ -55,8 +55,8 @@ for feature,sourcelist in featuremap.iteritems():
                 continue
             for version,status in caniuse["data"][sourcelist[0]]["stats"][b].iteritems():
                 if len(str(version).split("-")) > 1:
-                    version = str(version).split("-")[0]
-                
+                    version = str(version).split("-")[0]                
+                version=float(version)
                 if status[0] == "y":
                     min_version =  min(min_version,version) if min_version else version
                 elif status == "a":
@@ -73,8 +73,9 @@ for feature,sourcelist in featuremap.iteritems():
     image.write("""<svg
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   width="260.30087"
-   height="160.75708"
+   width="130"
+   height="80"
+   viewBox="0 0 260 160"
    version="1.1">
      <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.8}</style>""")
     for b in browsers:
