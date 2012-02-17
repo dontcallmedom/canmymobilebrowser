@@ -12,7 +12,7 @@ mobilehtml = json.loads(mobilehtmlsrc.read())
 
 localdatasrc = open("local-data.json")
 localdata = json.loads(localdatasrc.read())
-browsers = ["ios_saf","blackberry", "ie", "firefox", "android", "opera"]
+browsers = ["ios_saf","blackberry", "ie", "firefox", "android", "op_mob"]
 mergeddata = {}
 for feature,sourcelist in featuremap.iteritems():
     mergeddata[feature] = {}
@@ -22,15 +22,13 @@ for feature,sourcelist in featuremap.iteritems():
                 mergeddata[feature][browser] = [version,"y"]
             else:
                 mergeddata[feature][browser] = []
-    else:
-        mergeddata[feature] = {}
-    if localdata.has_key("feature"):
+    if localdata.has_key(feature):
         for b in browsers:
             if localdata[feature].has_key(b):
-                if len(localdata[feature][b].split(":"))==2 and localdata[feature][b].split(":")[1]=="p":
-                    mergeddata[feature][b] = [localdata[feature][b].split(":")[0],"p"]
+                if len(str(localdata[feature][b]).split(":"))==2 and localdata[feature][b].split(":")[1]=="p":
+                    mergeddata[feature][b] = [str(localdata[feature][b]).split(":")[0],"p"]
                 else:
-                    mergeddata[feature][b] = [localdata[feature][b].split(":")[0],"y"]
+                    mergeddata[feature][b] = [str(localdata[feature][b]).split(":")[0],"y"]
             elif localdata[feature].has_key("*"):
                 mergeddata[feature][b] = []
     if len(sourcelist) > 0:
