@@ -2,8 +2,6 @@
 "inputaccept": {"android": "3.0:p", "firefox": "9:p", "*":0},
 "filewrite": {"*":0},
 "filesystem": {"*":0},
-"getusermedia": {"*":0},
-"webaudio": {"*":0},
 "streamproc": {"*":0},
 "mediaqueries": {"blackberry": "4.7.1"},
 "css-device-adapt": {"op_mob": "11.1", "*":0},
