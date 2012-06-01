@@ -55,7 +55,7 @@ for feature,sourcelist in featuremap.iteritems():
                     for version,status in caniuse["data"][sourcelist[0]]["stats"][b].iteritems():
                         if len(str(version).split("-")) > 1:
                             version = str(version).split("-")[0]                
-                            version=float(version)
+                        version=float(version)
                         if status[0] == "y":
                             min_version =  min(min_version,version) if min_version else version
                         elif status[0] == "a":
