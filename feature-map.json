@@ -62,5 +62,6 @@
 "webworkers":["webworkers", "Web Workers"],
 "visibilitychange":[null, "Page Visibility API"],
 "fullscreen":["fullscreen"],
-"screenlock":[]
+"screenlock":[],
+"proximity":[]
 }
