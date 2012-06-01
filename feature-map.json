@@ -28,7 +28,7 @@
 "touchevent": ["touch", "Touch Events"],
 "vibration":[],
 "intents":[],
-"notification":["notifications", "Notifications API"],
+"notification":[null, "Notifications API"],
 "speechinput":[],
 "aria":["wai-aria"],
 "webstorage":["namevalue-storage", "Web storage"],
