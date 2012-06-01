@@ -58,7 +58,7 @@ for feature,sourcelist in featuremap.iteritems():
                             version=float(version)
                         if status[0] == "y":
                             min_version =  min(min_version,version) if min_version else version
-                        elif status == "a":
+                        elif status[0] == "a":
                             min_partial_version = min(min_partial_version,version) if min_partial_version else version
                         elif status == "n":
                             unsupported = True
