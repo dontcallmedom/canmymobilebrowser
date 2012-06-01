@@ -60,5 +60,7 @@
 "user-timing":[],
 "setimmediate":[],
 "webworkers":["webworkers", "Web Workers"],
-"visibilitychange":[null, "Page Visibility API"]
+"visibilitychange":[null, "Page Visibility API"],
+"fullscreen":["fullscreen"],
+"screenlock":[]
 }
