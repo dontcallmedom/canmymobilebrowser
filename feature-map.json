@@ -63,5 +63,6 @@
 "visibilitychange":[null, "Page Visibility API"],
 "fullscreen":["fullscreen"],
 "screenlock":[],
-"proximity":[]
+"proximity":[],
+"drm":[]
 }
