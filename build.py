@@ -82,7 +82,7 @@ for feature,sourcelist in featuremap.iteritems():
         if mergeddata[feature].has_key(b):
             if len(mergeddata[feature][b]):
                 if mergeddata[feature][b][1] == "p":
-                    text = "Partial support in %s from version %s" % (["name"], mergeddata[feature][b][0])
+                    text = "Partial support in %s from version %s" % (bData["name"], mergeddata[feature][b][0])
                     className = "partial"
                     label = "<rect x='%s' y='%s' width='60' height='22' fill='#ff0' opacity='0.8'></rect><text x='%s' y='%s' font-size='20px'>%s+</text>" % (bData["x"], bData["y"] + bData["height"]/2, bData["x"] + 3, bData["y"] + bData["height"]/2 + 15, mergeddata[feature][b][0])
                 else:
