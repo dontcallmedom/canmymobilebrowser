@@ -21,7 +21,7 @@ browsersImages = { "ios_saf" : {"name": "Safari on iOS", "x":0,"y":0,"width":60,
                    "op_mob":  {"name": "Opera mobile", "x":130,"y":0,"width":60,"height":60, "url":"opera.png"}
 }
 mergeddata = {}
-image = open("images/full.svg" % feature, "w")
+image = open("images/full.svg", "w")
 image.write("""<svg
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -29,7 +29,9 @@ image.write("""<svg
    height="70"
    viewBox="0 0 190 140"
    version="1.1">
-     <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.8}</style>""")
+     <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.8}</style>
+<title>Support for Web Platform features in mobile browsers</title>
+""")
 
 for feature,sourcelist in featuremap.iteritems():
     mergeddata[feature] = {}
@@ -78,7 +80,7 @@ for feature,sourcelist in featuremap.iteritems():
                             mergeddata[feature][b] =  [min_partial_version, "p" ]
                         elif unsupported:
                             mergeddata[feature][b] = []
-    image.write("<g id='%s'><title>Support for %s</title>" % (sourcelist[0], sourcelist[0])
+    image.write("<g id='%s'><title>Support for %s</title>" % (feature, feature))
     for b in browsers:
         bData = browsersImages[b]
         if mergeddata[feature].has_key(b):
@@ -102,9 +104,23 @@ for feature,sourcelist in featuremap.iteritems():
         image.write("<g><title>%s</title>" %(text))
         image.write("<image xlink:href='../%s' class='%s' x='%s' y='%s' width='%s' height='%s'></image>" %(bData["url"], className, bData["x"], bData["y"], bData["width"], bData["height"]))
         image.write(label)
-        image.write("</g>")
-    image.write("</g>")
-image.write("<script type='text/javascript'></script>")
+        image.write("</g>\n")
+    image.write("</g>\n")
+image.write("""<script type='text/javascript'>
+if (window.location.hash) {
+  var hash = window.location.hash.slice(1);
+  var features = document.documentElement.childNodes;
+  for (var i = 0; i&lt;features.length; i++) {
+    if (features[i].id) {
+       if (features[i].id != hash) {
+          features[i].style.display = 'none';
+       } else {
+          features[i].style.display = 'inherit';
+       }
+     }
+  }
+}
+</script>""")
 image.write("</svg>");
 image.close()
 
