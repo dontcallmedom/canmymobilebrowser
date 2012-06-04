@@ -21,6 +21,16 @@ browsersImages = { "ios_saf" : {"name": "Safari on iOS", "x":0,"y":0,"width":60,
                    "op_mob":  {"name": "Opera mobile", "x":130,"y":0,"width":60,"height":60, "url":"opera.png"}
 }
 mergeddata = {}
+image = open("images/full.svg" % feature, "w")
+image.write("""<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="95"
+   height="70"
+   viewBox="0 0 190 140"
+   version="1.1">
+     <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.8}</style>""")
+
 for feature,sourcelist in featuremap.iteritems():
     mergeddata[feature] = {}
     if len(sourcelist)==2:
@@ -68,21 +78,13 @@ for feature,sourcelist in featuremap.iteritems():
                             mergeddata[feature][b] =  [min_partial_version, "p" ]
                         elif unsupported:
                             mergeddata[feature][b] = []
-    image = open("images/%s.svg" % feature, "w")
-    image.write("""<svg
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   width="95"
-   height="70"
-   viewBox="0 0 190 140"
-   version="1.1">
-     <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.8}</style>""")
+    image.write("<g id='%s'><title>Support for %s</title>" % (sourcelist[0], sourcelist[0]);
     for b in browsers:
         bData = browsersImages[b]
         if mergeddata[feature].has_key(b):
             if len(mergeddata[feature][b]):
                 if mergeddata[feature][b][1] == "p":
-                    text = "Partial support in %s from version %s" % (["name"], mergeddata[feature][b][0])
+                    text = "Partial support in %s from version %s" % (bData["name"], mergeddata[feature][b][0])
                     className = "partial"
                     label = "<rect x='%s' y='%s' width='60' height='22' fill='#ff0' opacity='0.8'></rect><text x='%s' y='%s' font-size='20px'>%s+</text>" % (bData["x"], bData["y"] + bData["height"]/2, bData["x"] + 3, bData["y"] + bData["height"]/2 + 15, mergeddata[feature][b][0])
                 else:
@@ -97,11 +99,13 @@ for feature,sourcelist in featuremap.iteritems():
             className = "unknown"
             text = "Supported in %s unknown" % (bData["name"])
             label = "<text x='%s' y='%s' font-size='40px' fill='blue' text-anchor='middle'>?</text>" % (bData["x"] + bData["width"]/2, bData["y"] + bData["height"]/2 + 15)
-        image.write("<g><title>%s</title>" %text)
+        image.write("<g><title>%s</title>" %(text))
         image.write("<image xlink:href='../%s' class='%s' x='%s' y='%s' width='%s' height='%s'></image>" %(bData["url"], className, bData["x"], bData["y"], bData["width"], bData["height"]))
         image.write(label)
         image.write("</g>")
-    image.write("</svg>");
-    image.close()
+    image.write("</g>")
+image.write("<script type='text/javascript'></script>")
+image.write("</svg>");
+image.close()
 
 print json.dumps(mergeddata)
