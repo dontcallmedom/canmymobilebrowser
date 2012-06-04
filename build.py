@@ -78,7 +78,7 @@ for feature,sourcelist in featuremap.iteritems():
                             mergeddata[feature][b] =  [min_partial_version, "p" ]
                         elif unsupported:
                             mergeddata[feature][b] = []
-    image.write("<g id='%s'><title>Support for %s</title>" % (sourcelist[0], sourcelist[0]);
+    image.write("<g id='%s'><title>Support for %s</title>" % (sourcelist[0], sourcelist[0])
     for b in browsers:
         bData = browsersImages[b]
         if mergeddata[feature].has_key(b):
