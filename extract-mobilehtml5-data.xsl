@@ -17,19 +17,19 @@
     </xsl:call-template>
     <xsl:text>,"blackberry":</xsl:text>
     <xsl:call-template name="cani">
-      <xsl:with-param name="col"  select="4"/>
+      <xsl:with-param name="col"  select="6"/>
     </xsl:call-template>
     <xsl:text>,"ie":</xsl:text>
     <xsl:call-template name="cani">
-      <xsl:with-param name="col"  select="8"/>
+      <xsl:with-param name="col"  select="10"/>
     </xsl:call-template>
     <xsl:text>,"op_mobile":</xsl:text>
     <xsl:call-template name="cani">
-      <xsl:with-param name="col"  select="9"/>
+      <xsl:with-param name="col"  select="11"/>
     </xsl:call-template>
     <xsl:text>,"firefox":</xsl:text>
     <xsl:call-template name="cani">
-      <xsl:with-param name="col"  select="11"/>
+      <xsl:with-param name="col"  select="13"/>
     </xsl:call-template>
     <xsl:text>}</xsl:text>
     <xsl:if test="position()!=last()">

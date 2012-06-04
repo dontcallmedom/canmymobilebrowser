@@ -2,8 +2,6 @@
 "inputaccept": {"android": "3.0:p", "firefox": "9:p", "*":0},
 "filewrite": {"*":0},
 "filesystem": {"*":0},
-"getusermedia": {"*":0},
-"webaudio": {"*":0},
 "streamproc": {"*":0},
 "mediaqueries": {"blackberry": "4.7.1"},
 "css-device-adapt": {"op_mob": "11.1", "*":0},
@@ -28,5 +26,6 @@
 "p2p":{"*":0},
 "widgets":{"op_mob": "9.5", "*":0},
 "setimmediate":{"ie":"10", "*":0},
-"visibilitychange":{"ie":"10","firefox":"10","*":0}
+"visibilitychange":{"ie":"10","firefox":"10","*":0},
+"proximity":{"firefox":15, "*":0}
 }
