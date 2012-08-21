@@ -29,6 +29,6 @@
 "visibilitychange":{"ie":"10","firefox":"10","*":0},
 "proximity":{"firefox":15, "*":0},
 "canvas":{"blackberry":"6"},
-"css-animation": ["blackberry":"6"],
-"css-transitions": ["blackberry":"6"]
+"css-animation": {"blackberry":"6"},
+"css-transitions": {"blackberry":"6"}
 }

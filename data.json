@@ -24,11 +24,11 @@
          "y"
       ],
       "blackberry" : [
-         "6.0",
+         7,
          "y"
       ],
       "op_mob" : [
-         11,
+         11.5,
          "y"
       ],
       "ios_saf" : [
@@ -36,7 +36,7 @@
          "y"
       ],
       "firefox" : [
-         3.5,
+         "6",
          "y"
       ],
       "android" : [
@@ -50,7 +50,7 @@
          "y"
       ],
       "blackberry" : [
-         "4.7.1",
+         7,
          "y"
       ],
       "op_mob" : [
@@ -59,10 +59,6 @@
       ],
       "ios_saf" : [
          3.2,
-         "y"
-      ],
-      "firefox" : [
-         3.5,
          "y"
       ],
       "android" : [
@@ -80,7 +76,7 @@
          "y"
       ],
       "blackberry" : [
-         "5.0",
+         7,
          "y"
       ],
       "op_mob" : [
@@ -92,7 +88,7 @@
          "y"
       ],
       "firefox" : [
-         3,
+         "6",
          "y"
       ],
       "android" : [
@@ -110,7 +106,10 @@
    },
    "filewrite" : {
       "ie" : [],
-      "blackberry" : [],
+      "blackberry" : [
+         10,
+         "y"
+      ],
       "op_mob" : [],
       "ios_saf" : [],
       "firefox" : [],
@@ -126,19 +125,19 @@
          "y"
       ],
       "blackberry" : [
-         "6.1",
+         7,
          "y"
       ],
       "op_mob" : [
-         11,
+         11.5,
          "p"
       ],
       "ios_saf" : [
-         4.2,
-         "p"
+         6,
+         "y"
       ],
       "firefox" : [
-         6,
+         "7",
          "y"
       ],
       "android" : []
@@ -153,11 +152,11 @@
          "y"
       ],
       "blackberry" : [
-         "7.0",
+         7,
          "y"
       ],
       "op_mob" : [
-         11,
+         11.5,
          "y"
       ],
       "ios_saf" : [
@@ -165,7 +164,7 @@
          "y"
       ],
       "firefox" : [
-         3.5,
+         "6",
          "y"
       ],
       "android" : [
@@ -183,7 +182,7 @@
          "y"
       ],
       "blackberry" : [
-         "5.0",
+         7,
          "y"
       ],
       "op_mob" : [
@@ -195,7 +194,7 @@
          "y"
       ],
       "firefox" : [
-         2,
+         "6",
          "y"
       ],
       "android" : [
@@ -264,16 +263,16 @@
    },
    "css-border" : {
       "ie" : [],
+      "blackberry" : [
+         10,
+         "y"
+      ],
       "op_mob" : [
-         11,
+         11.5,
          "p"
       ],
       "ios_saf" : [
          3.2,
-         "p"
-      ],
-      "firefox" : [
-         3.5,
          "p"
       ],
       "android" : [
@@ -302,7 +301,10 @@
          "y"
       ],
       "ie" : [],
-      "blackberry" : [],
+      "blackberry" : [
+         10,
+         "y"
+      ],
       "op_mob" : [
          12,
          "y"
@@ -312,8 +314,8 @@
          "y"
       ],
       "firefox" : [
-         3.6,
-         "p"
+         "6",
+         "y"
       ],
       "android" : [
          3,
@@ -329,14 +331,17 @@
          10,
          "y"
       ],
-      "blackberry" : [],
+      "blackberry" : [
+         10,
+         "y"
+      ],
       "op_mob" : [
-         11.1,
+         11.5,
          "y"
       ],
       "ios_saf" : [],
       "firefox" : [
-         3.6,
+         "11",
          "y"
       ],
       "android" : [
@@ -354,11 +359,11 @@
          "y"
       ],
       "blackberry" : [
-         "6.0",
+         7,
          "y"
       ],
       "op_mob" : [
-         11,
+         11.5,
          "y"
       ],
       "ios_saf" : [
@@ -366,7 +371,7 @@
          "y"
       ],
       "firefox" : [
-         3.5,
+         "6",
          "y"
       ],
       "android" : [
@@ -414,7 +419,7 @@
          "p"
       ],
       "blackberry" : [
-         "7",
+         7,
          "y"
       ],
       "op_mob" : [
@@ -423,10 +428,6 @@
       ],
       "ios_saf" : [
          3.2,
-         "y"
-      ],
-      "firefox" : [
-         3,
          "y"
       ],
       "android" : [
@@ -458,7 +459,10 @@
          10,
          "y"
       ],
-      "blackberry" : [],
+      "blackberry" : [
+         7,
+         "y"
+      ],
       "op_mob" : [
          12,
          "y"
@@ -468,7 +472,7 @@
          "y"
       ],
       "firefox" : [
-         3.5,
+         "10",
          "y"
       ],
       "android" : [
@@ -486,11 +490,11 @@
          "y"
       ],
       "blackberry" : [
-         "6.0",
+         7,
          "y"
       ],
       "op_mob" : [
-         11,
+         11.5,
          "y"
       ],
       "ios_saf" : [
@@ -498,7 +502,7 @@
          "y"
       ],
       "firefox" : [
-         3.5,
+         "6",
          "y"
       ],
       "android" : [
@@ -513,7 +517,7 @@
          "y"
       ],
       "blackberry" : [
-         "5.0",
+         7,
          "y"
       ],
       "op_mob" : [],
@@ -522,7 +526,7 @@
          "y"
       ],
       "firefox" : [
-         5,
+         "6",
          "y"
       ],
       "android" : [
@@ -552,12 +556,12 @@
          9,
          "y"
       ],
-      "op_mob" : [],
-      "ios_saf" : [],
-      "firefox" : [
-         7,
+      "blackberry" : [
+         10,
          "y"
       ],
+      "op_mob" : [],
+      "ios_saf" : [],
       "android" : [
          4,
          "y"
@@ -573,11 +577,11 @@
          "y"
       ],
       "blackberry" : [
-         "5.0",
+         7,
          "y"
       ],
       "op_mob" : [
-         11,
+         11.5,
          "y"
       ],
       "ios_saf" : [
@@ -585,7 +589,7 @@
          "y"
       ],
       "firefox" : [
-         3.5,
+         "6",
          "y"
       ],
       "android" : [
@@ -598,16 +602,16 @@
          9,
          "y"
       ],
+      "blackberry" : [
+         7,
+         "y"
+      ],
       "op_mob" : [
-         11,
+         11.5,
          "y"
       ],
       "ios_saf" : [
          5,
-         "y"
-      ],
-      "firefox" : [
-         3.6,
          "y"
       ],
       "android" : []
@@ -622,11 +626,11 @@
          "y"
       ],
       "blackberry" : [
-         "5.0",
+         7,
          "y"
       ],
       "op_mob" : [
-         11,
+         11.5,
          "y"
       ],
       "ios_saf" : [
@@ -634,7 +638,7 @@
          "y"
       ],
       "firefox" : [
-         3,
+         "6",
          "y"
       ],
       "android" : [
@@ -669,11 +673,11 @@
          "y"
       ],
       "blackberry" : [
-         "6.0",
+         7,
          "y"
       ],
       "op_mob" : [
-         11,
+         11.5,
          "y"
       ],
       "ios_saf" : [
@@ -681,7 +685,7 @@
          "y"
       ],
       "firefox" : [
-         3.5,
+         "6",
          "y"
       ],
       "android" : [
@@ -707,7 +711,7 @@
       "op_mob" : [],
       "ios_saf" : [],
       "firefox" : [
-         4,
+         "6",
          "y"
       ],
       "android" : []
@@ -722,12 +726,9 @@
    },
    "webaudio" : {
       "ie" : [],
+      "blackberry" : [],
       "op_mob" : [],
       "ios_saf" : [],
-      "firefox" : [
-         4,
-         "p"
-      ],
       "android" : []
    },
    "getusermedia" : {
@@ -762,16 +763,16 @@
          9,
          "y"
       ],
+      "blackberry" : [
+         7,
+         "y"
+      ],
       "op_mob" : [
-         11,
+         11.5,
          "y"
       ],
       "ios_saf" : [
          4,
-         "y"
-      ],
-      "firefox" : [
-         3.5,
          "y"
       ],
       "android" : [
@@ -792,10 +793,6 @@
       "ios_saf" : [
          3.2,
          "p"
-      ],
-      "firefox" : [
-         3,
-         "y"
       ],
       "android" : []
    },
@@ -839,11 +836,11 @@
       ],
       "ie" : [],
       "blackberry" : [
-         "6.0",
+         7,
          "y"
       ],
       "op_mob" : [
-         11,
+         11.5,
          "y"
       ],
       "ios_saf" : [
@@ -866,11 +863,11 @@
          "y"
       ],
       "blackberry" : [
-         "7.0",
+         7,
          "y"
       ],
       "op_mob" : [
-         11,
+         11.5,
          "y"
       ],
       "ios_saf" : [
@@ -878,7 +875,7 @@
          "y"
       ],
       "firefox" : [
-         3.5,
+         "6",
          "y"
       ],
       "android" : [
@@ -897,10 +894,6 @@
          "y"
       ],
       "ios_saf" : [],
-      "firefox" : [
-         4,
-         "y"
-      ],
       "android" : []
    },
    "setimmediate" : {
@@ -920,9 +913,12 @@
          "y"
       ],
       "ie" : [],
-      "blackberry" : [],
+      "blackberry" : [
+         7,
+         "y"
+      ],
       "op_mob" : [
-         11.1,
+         11.5,
          "y"
       ],
       "ios_saf" : [
@@ -930,7 +926,7 @@
          "y"
       ],
       "firefox" : [
-         6,
+         "6",
          "y"
       ],
       "android" : []
@@ -945,7 +941,7 @@
          "y"
       ],
       "blackberry" : [
-         "5.0",
+         7,
          "y"
       ],
       "op_mob" : [
@@ -957,7 +953,7 @@
          "y"
       ],
       "firefox" : [
-         4,
+         "6",
          "y"
       ],
       "android" : [
@@ -974,7 +970,10 @@
          10,
          "y"
       ],
-      "blackberry" : [],
+      "blackberry" : [
+         7,
+         "y"
+      ],
       "op_mob" : [
          12,
          "y"
@@ -984,7 +983,7 @@
          "y"
       ],
       "firefox" : [
-         4,
+         "10",
          "y"
       ],
       "android" : [
@@ -1010,14 +1009,17 @@
          10,
          "y"
       ],
-      "blackberry" : [],
+      "blackberry" : [
+         10,
+         "y"
+      ],
       "op_mob" : [],
       "ios_saf" : [
          3.2,
          "y"
       ],
       "firefox" : [
-         10,
+         "11",
          "y"
       ],
       "android" : [
@@ -1030,12 +1032,12 @@
          10,
          "y"
       ],
-      "op_mob" : [],
-      "ios_saf" : [],
-      "firefox" : [
-         4,
+      "blackberry" : [
+         10,
          "y"
       ],
+      "op_mob" : [],
+      "ios_saf" : [],
       "android" : []
    },
    "user-timing" : {},
@@ -1049,11 +1051,11 @@
          "p"
       ],
       "blackberry" : [
-         "6.1",
+         7,
          "y"
       ],
       "op_mob" : [
-         11,
+         11.5,
          "y"
       ],
       "ios_saf" : [
@@ -1061,7 +1063,7 @@
          "y"
       ],
       "firefox" : [
-         6,
+         "6",
          "y"
       ],
       "android" : [
@@ -1100,7 +1102,10 @@
    },
    "filesystem" : {
       "ie" : [],
-      "blackberry" : [],
+      "blackberry" : [
+         10,
+         "y"
+      ],
       "op_mob" : [],
       "ios_saf" : [],
       "firefox" : [],
@@ -1108,12 +1113,12 @@
    },
    "fullscreen" : {
       "ie" : [],
-      "op_mob" : [],
-      "ios_saf" : [],
-      "firefox" : [
+      "blackberry" : [
          10,
          "p"
       ],
+      "op_mob" : [],
+      "ios_saf" : [],
       "android" : []
    }
 }
