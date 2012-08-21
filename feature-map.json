@@ -23,7 +23,7 @@
 "inputdate": [null, "HTML5 Form New Controls"],
 "inputtext": [],
 "inputpattern": [],
-"inputhint": [],
+"inputhint": ["input-placeholder"],
 "datalist": ["datalist"],
 "touchevent": ["touch", "Touch Events"],
 "vibration":[],
