@@ -64,5 +64,8 @@
 "fullscreen":["fullscreen"],
 "screenlock":[],
 "proximity":[],
-"drm":[]
+"drm":[],
+"ambientlight":[],
+"gallery":[],
+"humidity":[]
 }
