@@ -14,12 +14,13 @@ localdatasrc = open("local-data.json")
 localdata = json.loads(localdatasrc.read())
 browsers = ["ios_saf","blackberry", "ie", "firefox", "android", "op_mob"]
 browsersImages = { "ios_saf" : {"name": "Safari on iOS", "x":0,"y":0,"width":60,"height":60, "url":"safari.png"},
-                   "blackberry": {"name": "Blackberry browser", "x":0,"y":75,"width":60,"height":49.5, "url":"blackberry.jpg"},
+                   "blackberry": {"name": "Blackberry browser", "x":0,"y":75,"width":60,"height":49.5, "url":"blackberry.jpg", "caniusename": "bb"},
                    "ie": {"name": "Internet Explorer on Windows Phone", "x":63,"y":70,"width":60,"height":60, "url":"ie.png"},
-                   "firefox": {"name": "Firefox mobile", "x":130,"y":70,"width":60,"height":60, "url":"firefox.png"},
+                   "firefox": {"name": "Firefox mobile", "x":130,"y":70,"width":60,"height":60, "url":"firefox.png", "caniusename": "ff_and"},
                    "android": {"name": "Android browser", "x":65,"y":0,"width":60,"height":60, "url":"android.png"},
                    "op_mob":  {"name": "Opera mobile", "x":130,"y":0,"width":60,"height":60, "url":"opera.png"}
 }
+
 mergeddata = {}
 for feature,sourcelist in featuremap.iteritems():
     mergeddata[feature] = {}
@@ -47,12 +48,13 @@ for feature,sourcelist in featuremap.iteritems():
                 sys.stderr.write("Couldn't find feature %s (%s) in canIuse data\n" % (sourcelist[0], feature))
             else:
                 for b in browsers:
+                    caniusename = browsersImages[b]["caniusename"] if browsersImages[b].has_key("caniusename") else b
                     min_version = 0
                     min_partial_version = 0
                     unsupported = False
-                    if not caniuse["data"][sourcelist[0]]["stats"].has_key(b):
+                    if not caniuse["data"][sourcelist[0]]["stats"].has_key(caniusename):
                         continue
-                    for version,status in caniuse["data"][sourcelist[0]]["stats"][b].iteritems():
+                    for version,status in caniuse["data"][sourcelist[0]]["stats"][caniusename].iteritems():
                         if len(str(version).split("-")) > 1:
                             version = str(version).split("-")[0]                
                         version=float(version)
