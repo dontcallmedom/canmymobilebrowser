@@ -54,15 +54,31 @@ for feature,sourcelist in featuremap.iteritems():
                     unsupported = False
                     if not caniuse["data"][sourcelist[0]]["stats"].has_key(caniusename):
                         continue
-                    for version,status in caniuse["data"][sourcelist[0]]["stats"][caniusename].iteritems():
-                        if len(str(version).split("-")) > 1:
-                            version = str(version).split("-")[0]                
-                        version=float(version)
+                    if type(caniuse["data"][sourcelist[0]]["stats"][caniusename]) == dict:
+                        for version,status in caniuse["data"][sourcelist[0]]["stats"][caniusename].iteritems():
+                            if len(str(version).split("-")) > 1:
+                                version = str(version).split("-")[0]                
+                            version=float(version)
+                            if status[0] == "y":
+                                min_version =  min(min_version,version) if min_version else version
+                            elif status[0] == "a":
+                                min_partial_version = min(min_partial_version,version) if min_partial_version else version
+                            elif status == "n":
+                                unsupported = True
+                            if min_version:
+                                mergeddata[feature][b] =  [min_version, "y"]
+                            elif min_partial_version:
+                                mergeddata[feature][b] =  [min_partial_version, "p" ]
+                            elif unsupported:
+                                mergeddata[feature][b] = []
+                    elif type(caniuse["data"][sourcelist[0]]["stats"][caniusename]) == list:
+                        version = caniuse["agents"][caniusename]["current_version"]
+                        status = caniuse["data"][sourcelist[0]]["stats"][caniusename][0]
                         if status[0] == "y":
-                            min_version =  min(min_version,version) if min_version else version
+                            min_version = version
                         elif status[0] == "a":
-                            min_partial_version = min(min_partial_version,version) if min_partial_version else version
-                        elif status == "n":
+                            min_partial_version = version
+                        elif status[0] == "n":
                             unsupported = True
                         if min_version:
                             mergeddata[feature][b] =  [min_version, "y"]
@@ -70,6 +86,7 @@ for feature,sourcelist in featuremap.iteritems():
                             mergeddata[feature][b] =  [min_partial_version, "p" ]
                         elif unsupported:
                             mergeddata[feature][b] = []
+
     image = open("images/%s.svg" % feature, "w")
     image.write("""<svg
    xmlns="http://www.w3.org/2000/svg"
