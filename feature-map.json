@@ -68,5 +68,7 @@
 "ambientlight":[],
 "gallery":[],
 "humidity":[],
-"discovery":[]
+"discovery":[],
+"picture":[],
+"srcset":[]
 }
