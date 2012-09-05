@@ -14,12 +14,13 @@ localdatasrc = open("local-data.json")
 localdata = json.loads(localdatasrc.read())
 browsers = ["ios_saf","blackberry", "ie", "firefox", "android", "op_mob"]
 browsersImages = { "ios_saf" : {"name": "Safari on iOS", "x":0,"y":0,"width":60,"height":60, "url":"safari.png"},
-                   "blackberry": {"name": "Blackberry browser", "x":0,"y":75,"width":60,"height":49.5, "url":"blackberry.jpg"},
+                   "blackberry": {"name": "Blackberry browser", "x":0,"y":75,"width":60,"height":49.5, "url":"blackberry.jpg", "caniusename": "bb"},
                    "ie": {"name": "Internet Explorer on Windows Phone", "x":63,"y":70,"width":60,"height":60, "url":"ie.png"},
-                   "firefox": {"name": "Firefox mobile", "x":130,"y":70,"width":60,"height":60, "url":"firefox.png"},
+                   "firefox": {"name": "Firefox mobile", "x":130,"y":70,"width":60,"height":60, "url":"firefox.png", "caniusename": "and_ff"},
                    "android": {"name": "Android browser", "x":65,"y":0,"width":60,"height":60, "url":"android.png"},
                    "op_mob":  {"name": "Opera mobile", "x":130,"y":0,"width":60,"height":60, "url":"opera.png"}
 }
+
 mergeddata = {}
 image = open("images/full.svg", "w")
 image.write("""<svg
@@ -59,20 +60,37 @@ for feature,sourcelist in featuremap.iteritems():
                 sys.stderr.write("Couldn't find feature %s (%s) in canIuse data\n" % (sourcelist[0], feature))
             else:
                 for b in browsers:
+                    caniusename = browsersImages[b]["caniusename"] if browsersImages[b].has_key("caniusename") else b
                     min_version = 0
                     min_partial_version = 0
                     unsupported = False
-                    if not caniuse["data"][sourcelist[0]]["stats"].has_key(b):
+                    if not caniuse["data"][sourcelist[0]]["stats"].has_key(caniusename):
                         continue
-                    for version,status in caniuse["data"][sourcelist[0]]["stats"][b].iteritems():
-                        if len(str(version).split("-")) > 1:
-                            version = str(version).split("-")[0]                
-                        version=float(version)
+                    if type(caniuse["data"][sourcelist[0]]["stats"][caniusename]) == dict:
+                        for version,status in caniuse["data"][sourcelist[0]]["stats"][caniusename].iteritems():
+                            if len(str(version).split("-")) > 1:
+                                version = str(version).split("-")[0]                
+                            version=float(version)
+                            if status[0] == "y":
+                                min_version =  min(min_version,version) if min_version else version
+                            elif status[0] == "a":
+                                min_partial_version = min(min_partial_version,version) if min_partial_version else version
+                            elif status == "n":
+                                unsupported = True
+                            if min_version:
+                                mergeddata[feature][b] =  [min_version, "y"]
+                            elif min_partial_version:
+                                mergeddata[feature][b] =  [min_partial_version, "p" ]
+                            elif unsupported:
+                                mergeddata[feature][b] = []
+                    elif type(caniuse["data"][sourcelist[0]]["stats"][caniusename]) == list:
+                        version = caniuse["agents"][caniusename]["current_version"]
+                        status = caniuse["data"][sourcelist[0]]["stats"][caniusename][0]
                         if status[0] == "y":
-                            min_version =  min(min_version,version) if min_version else version
+                            min_version = version
                         elif status[0] == "a":
-                            min_partial_version = min(min_partial_version,version) if min_partial_version else version
-                        elif status == "n":
+                            min_partial_version = version
+                        elif status[0] == "n":
                             unsupported = True
                         if min_version:
                             mergeddata[feature][b] =  [min_version, "y"]
@@ -80,7 +98,16 @@ for feature,sourcelist in featuremap.iteritems():
                             mergeddata[feature][b] =  [min_partial_version, "p" ]
                         elif unsupported:
                             mergeddata[feature][b] = []
-    image.write("<g id='%s'><title>Support for %s</title>" % (feature, feature))
+    image = open("images/%s.svg" % feature, "w")
+    image.write("""<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="95"
+   height="70"
+   viewBox="0 0 190 140"
+   version="1.1">
+     <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.8}</style>""")
+    image.write("<title>Support for %s</title>" % (feature))
     for b in browsers:
         bData = browsersImages[b]
         if mergeddata[feature].has_key(b):

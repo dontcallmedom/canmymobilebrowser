@@ -23,7 +23,7 @@
 "inputdate": [null, "HTML5 Form New Controls"],
 "inputtext": [],
 "inputpattern": [],
-"inputhint": [],
+"inputhint": ["input-placeholder"],
 "datalist": ["datalist"],
 "touchevent": ["touch", "Touch Events"],
 "vibration":[],
@@ -64,5 +64,11 @@
 "fullscreen":["fullscreen"],
 "screenlock":[],
 "proximity":[],
-"drm":[]
+"drm":[],
+"ambientlight":[],
+"gallery":[],
+"humidity":[],
+"discovery":[],
+"picture":[],
+"srcset":[]
 }
