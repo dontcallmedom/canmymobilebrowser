@@ -133,8 +133,7 @@ for feature,sourcelist in featuremap.iteritems():
         image.write("<image xlink:href='../%s' class='%s' x='%s' y='%s' width='%s' height='%s'></image>" %(bData["url"], className, bData["x"], bData["y"], bData["width"], bData["height"]))
         image.write(label)
         image.write("</g>\n")
-    image.write("</g>\n")
-image.write("""<script type='text/javascript'>
+    image.write("""<script type='text/javascript'>
 if (window.location.hash) {
   var hash = window.location.hash.slice(1);
   var features = document.documentElement.childNodes;
@@ -149,7 +148,7 @@ if (window.location.hash) {
   }
 }
 </script>""")
-image.write("</svg>");
-image.close()
+    image.write("</svg>");
+    image.close()
 
 print json.dumps(mergeddata)
