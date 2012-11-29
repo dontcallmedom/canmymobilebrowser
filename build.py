@@ -16,10 +16,10 @@ browsers = ["ios_saf","blackberry", "ie", "firefox", "android", "op_mob", "and_c
 browsersImages = { "ios_saf" : {"name": "Safari on iOS", "x":0,"y":0,"width":60,"height":60, "url":"safari.jpg"},
                    "blackberry": {"name": "Blackberry browser", "x":0,"y":75,"width":60,"height":49.5, "url":"blackberry.jpg", "caniusename": "bb"},
                    "ie": {"name": "Internet Explorer on Windows Phone", "x":63,"y":70,"width":60,"height":60, "url":"ie.png"},
-                   "firefox": {"name": "Firefox mobile", "x":130,"y":70,"width":60,"height":60, "url":"firefox.png", "caniusename": "and_ff"},
+                   "firefox": {"name": "Firefox mobile", "x":130,"y":70,"width":60,"height":60, "url":"firefox.png", "caniusename": "and_ff", "caniuse_minversion": 15},
                    "android": {"name": "Android browser", "x":65,"y":0,"width":60,"height":60, "url":"android.png"},
                    "op_mob":  {"name": "Opera mobile", "x":130,"y":0,"width":60,"height":60, "url":"opera.png"},
-                   "and_chr":  {"name": "Chrome for Android", "x":195,"y":0,"width":60,"height":59, "url":"chrome.png"}
+                   "and_chr":  {"name": "Chrome for Android", "x":195,"y":0,"width":60,"height":59, "url":"chrome.png", "caniuse_minversion": 18}
 }
 
 mergeddata = {}
@@ -73,6 +73,8 @@ for feature,sourcelist in featuremap.iteritems():
                             if len(str(version).split("-")) > 1:
                                 version = str(version).split("-")[0]                
                             version=float(version)
+                            if browsersImages[b].has_key("caniuse_minversion"):
+                                version = version + browsersImages[b]["caniuse_minversion"]
                             if status[0] == "y":
                                 min_version =  min(min_version,version) if min_version else version
                             elif status[0] == "a":
