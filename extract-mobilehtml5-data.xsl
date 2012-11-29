@@ -17,7 +17,7 @@
     </xsl:call-template>
     <xsl:text>,"blackberry":</xsl:text>
     <xsl:call-template name="cani">
-      <xsl:with-param name="col"  select="6"/>
+      <xsl:with-param name="col"  select="5"/>
     </xsl:call-template>
     <xsl:text>,"ie":</xsl:text>
     <xsl:call-template name="cani">
@@ -41,16 +41,16 @@
 
 <xsl:template name="cani">
   <xsl:param name="col"/>
-  <xsl:variable name="min_version" select="normalize-space(//html:table//html:td[.='Minimum version tested']/following-sibling::html:td[position()=$col])"/>
+  <xsl:variable name="min_version" select="substring-before(concat(normalize-space(//html:table//html:td[.='Versions tested']/following-sibling::html:td[position()=$col]),' to'), ' to')"/>
   <xsl:variable name="cell" select="following-sibling::html:td[position()=$col]"/>
   <xsl:choose>
-    <xsl:when test="not($cell/html:img)">
+    <xsl:when test="not($cell/@class='true')">
       <xsl:text>0</xsl:text>
     </xsl:when>
-    <xsl:when test="$cell/html:img and normalize-space($cell)=''">
+    <xsl:when test="$cell/@class='true' and normalize-space($cell)=''">
       "<xsl:value-of select="$min_version"/>"
     </xsl:when>
-    <xsl:when test="$cell/html:img and contains($cell, '+')">
+    <xsl:when test="$cell/@class='true' and contains($cell, '+')">
       "<xsl:value-of select="normalize-space(substring-before($cell, '+'))"/>"
     </xsl:when>
     <xsl:otherwise>
