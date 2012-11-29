@@ -15,6 +15,10 @@
     <xsl:call-template name="cani">
       <xsl:with-param name="col"  select="2"/>
     </xsl:call-template>
+    <xsl:text>,"and_chr":</xsl:text>
+    <xsl:call-template name="cani">
+      <xsl:with-param name="col"  select="3"/>
+    </xsl:call-template>
     <xsl:text>,"blackberry":</xsl:text>
     <xsl:call-template name="cani">
       <xsl:with-param name="col"  select="5"/>

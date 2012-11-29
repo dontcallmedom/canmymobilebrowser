@@ -12,13 +12,14 @@ mobilehtml = json.loads(mobilehtmlsrc.read())
 
 localdatasrc = open("local-data.json")
 localdata = json.loads(localdatasrc.read())
-browsers = ["ios_saf","blackberry", "ie", "firefox", "android", "op_mob"]
+browsers = ["ios_saf","blackberry", "ie", "firefox", "android", "op_mob", "and_chr"]
 browsersImages = { "ios_saf" : {"name": "Safari on iOS", "x":0,"y":0,"width":60,"height":60, "url":"safari.png"},
                    "blackberry": {"name": "Blackberry browser", "x":0,"y":75,"width":60,"height":49.5, "url":"blackberry.jpg", "caniusename": "bb"},
                    "ie": {"name": "Internet Explorer on Windows Phone", "x":63,"y":70,"width":60,"height":60, "url":"ie.png"},
                    "firefox": {"name": "Firefox mobile", "x":130,"y":70,"width":60,"height":60, "url":"firefox.png", "caniusename": "and_ff"},
                    "android": {"name": "Android browser", "x":65,"y":0,"width":60,"height":60, "url":"android.png"},
-                   "op_mob":  {"name": "Opera mobile", "x":130,"y":0,"width":60,"height":60, "url":"opera.png"}
+                   "op_mob":  {"name": "Opera mobile", "x":130,"y":0,"width":60,"height":60, "url":"opera.png"},
+                   "and_chr":  {"name": "Chrome for Android", "x":195,"y":0,"width":60,"height":59, "url":"chrome.png"}
 }
 
 mergeddata = {}
@@ -26,9 +27,9 @@ image = open("images/full.svg", "w")
 image.write("""<svg
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   width="95"
+   width="123"
    height="70"
-   viewBox="0 0 190 140"
+   viewBox="0 0 255 140"
    version="1.1">
      <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.8}</style>
 <title>Support for Web Platform features in mobile browsers</title>
@@ -102,9 +103,9 @@ for feature,sourcelist in featuremap.iteritems():
     image.write("""<svg
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   width="95"
+   width="123"
    height="70"
-   viewBox="0 0 190 140"
+   viewBox="0 0 255 140"
    version="1.1">
      <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.8}</style>""")
     image.write("<title>Support for %s</title>" % (feature))
