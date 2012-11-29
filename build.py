@@ -54,7 +54,8 @@ for feature,sourcelist in featuremap.iteritems():
                     else:
                         mergeddata[feature][b] = []
             elif localdata[feature].has_key("*"):
-                mergeddata[feature][b] = []
+                if not(mergeddata[feature].has_key(b)):
+                           mergeddata[feature][b] = []
     if len(sourcelist) > 0:
         if sourcelist[0]:
             if not caniuse["data"].has_key(sourcelist[0]):
