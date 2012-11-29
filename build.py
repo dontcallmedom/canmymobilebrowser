@@ -22,6 +22,18 @@ browsersImages = { "ios_saf" : {"name": "Safari on iOS", "x":0,"y":0,"width":60,
 }
 
 mergeddata = {}
+image = open("images/full.svg", "w")
+image.write("""<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="95"
+   height="70"
+   viewBox="0 0 190 140"
+   version="1.1">
+     <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.8}</style>
+<title>Support for Web Platform features in mobile browsers</title>
+""")
+
 for feature,sourcelist in featuremap.iteritems():
     mergeddata[feature] = {}
     if len(sourcelist)==2:
@@ -86,7 +98,6 @@ for feature,sourcelist in featuremap.iteritems():
                             mergeddata[feature][b] =  [min_partial_version, "p" ]
                         elif unsupported:
                             mergeddata[feature][b] = []
-
     image = open("images/%s.svg" % feature, "w")
     image.write("""<svg
    xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +107,7 @@ for feature,sourcelist in featuremap.iteritems():
    viewBox="0 0 190 140"
    version="1.1">
      <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.8}</style>""")
+    image.write("<title>Support for %s</title>" % (feature))
     for b in browsers:
         bData = browsersImages[b]
         if mergeddata[feature].has_key(b):
@@ -116,11 +128,27 @@ for feature,sourcelist in featuremap.iteritems():
             className = "unknown"
             text = "Supported in %s unknown" % (bData["name"])
             label = "<text x='%s' y='%s' font-size='40px' fill='blue' text-anchor='middle'>?</text>" % (bData["x"] + bData["width"]/2, bData["y"] + bData["height"]/2 + 15)
-        image.write("<g><title>%s</title>" %text)
+        image.write("<g><title>%s</title>" %(text))
         image.write("<image xlink:href='../%s' class='%s' x='%s' y='%s' width='%s' height='%s'></image>" %(bData["url"], className, bData["x"], bData["y"], bData["width"], bData["height"]))
         image.write(label)
-        image.write("</g>")
-    image.write("</svg>");
-    image.close()
+        image.write("</g>\n")
+    image.write("</g>\n")
+image.write("""<script type='text/javascript'>
+if (window.location.hash) {
+  var hash = window.location.hash.slice(1);
+  var features = document.documentElement.childNodes;
+  for (var i = 0; i&lt;features.length; i++) {
+    if (features[i].id) {
+       if (features[i].id != hash) {
+          features[i].style.display = 'none';
+       } else {
+          features[i].style.display = 'inherit';
+       }
+     }
+  }
+}
+</script>""")
+image.write("</svg>");
+image.close()
 
 print json.dumps(mergeddata)
