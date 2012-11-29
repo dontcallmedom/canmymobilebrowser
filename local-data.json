@@ -20,7 +20,7 @@
 "battery": {"firefox": "10", "*":0},
 "sensors":{"*":0},
 "online":{"android": "2.2", "ie": "8", "*":0},
-"networkapi":{"android": "2.2:p", "*": 0},
+"networkapi":{"android": "2.2:p", "fireox": "10:p", "*": 0},
 "messaging":{"*":0},
 "postmessage":{"blackberry":"7"},
 "p2p":{"*":0},
