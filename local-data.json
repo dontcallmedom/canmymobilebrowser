@@ -39,5 +39,6 @@
 "picture": {"*":0},
 "srcset": {"*":0},
 "ambientlight": {"*":0},
-"humidity": {"*":0}
+"humidity": {"*":0},
+"wi-local":{"*":0}
 }
