@@ -40,5 +40,7 @@
 "srcset": {"*":0},
 "ambientlight": {"*":0},
 "humidity": {"*":0},
-"wi-local":{"*":0}
+"wi-local":{"*":0},
+"crypto":{"*":0},
+"quota":{"and_chr":"18"}
 }
