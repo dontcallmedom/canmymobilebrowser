@@ -71,6 +71,8 @@
 "humidity":[],
 "discovery":[],
 "picture":[],
-"srcset":[]
-"wi-local":[]
+"srcset":[],
+"wi-local":[],
+"crypto":[],
+"quota":[]
 }
