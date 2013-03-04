@@ -76,5 +76,7 @@
 "crypto":[],
 "quota":[],
 "recording":[],
-"flexbox":["flexbox"]
+"flexbox":["flexbox"],
+"contacts-sys":[],
+"restiming":[]
 }
