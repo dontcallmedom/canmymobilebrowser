@@ -43,5 +43,6 @@
 "wi-local":{"*":0},
 "crypto":{"*":0},
 "quota":{"and_chr":"18"},
-"recording":{"*":0}
+"recording":{"*":0},
+"input-datetime":{"firefox":"19:p"}
 }
