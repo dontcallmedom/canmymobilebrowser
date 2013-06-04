@@ -41,7 +41,7 @@
 "ambientlight": {"*":0},
 "humidity": {"*":0},
 "wi-local":{"*":0},
-"crypto":{"*":0},
+"crypto":{"firefox":"19:p", "and_chr":"25:p","*":0},
 "quota":{"and_chr":"18"},
 "recording":{"*":0},
 "input-datetime":{"firefox":"19:p"}
