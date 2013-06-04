@@ -26,7 +26,7 @@
 "inputhint": ["input-placeholder"],
 "datalist": ["datalist"],
 "touchevent": ["touch", "Touch Events"],
-"pointer-events": ["pointer-events"],
+"pointer-events": ["pointer"],
 "vibration":[],
 "intents":[],
 "notification":["notifications", "Notifications API"],
