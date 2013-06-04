@@ -73,7 +73,7 @@
 "picture":[],
 "srcset":[],
 "wi-local":[],
-"crypto":[],
+"crypto":["cryptography"],
 "quota":[],
 "recording":[],
 "flexbox":["flexbox"],
