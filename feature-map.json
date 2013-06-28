@@ -54,6 +54,7 @@
 "postmessage":["x-doc-messaging"],
 "p2p":[],
 "manifest":["offline-apps", "Application Cache"],
+"manifestjson":[],
 "nav-timing":["nav-timing","Navigation Timing API"],
 "res-timing":[],
 "perf-timeline":[],
