@@ -23,6 +23,10 @@
     <xsl:call-template name="cani">
       <xsl:with-param name="col"  select="5"/>
     </xsl:call-template>
+    <xsl:text>,"bb10":</xsl:text>
+    <xsl:call-template name="cani">
+      <xsl:with-param name="col"  select="6"/>
+    </xsl:call-template>
     <xsl:text>,"ie":</xsl:text>
     <xsl:call-template name="cani">
       <xsl:with-param name="col"  select="10"/>
