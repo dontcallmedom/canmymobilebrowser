@@ -12,18 +12,21 @@
          12.1,
          "y"
       ],
-      "ios_saf" : [],
+      "ios_saf" : [
+         7,
+         "y"
+      ],
       "android" : [],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "12.1",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
@@ -49,15 +52,15 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "11",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
@@ -79,7 +82,7 @@
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ],
       "android" : [
@@ -87,7 +90,7 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ]
    },
@@ -113,15 +116,15 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "11",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
@@ -133,21 +136,6 @@
       "firefox" : [],
       "android" : [],
       "and_chr" : []
-   },
-   "filewrite" : {
-      "ie" : [],
-      "blackberry" : [
-         10,
-         "y"
-      ],
-      "op_mob" : [],
-      "ios_saf" : [],
-      "firefox" : [],
-      "android" : [],
-      "and_chr" : [
-         18,
-         "y"
-      ]
    },
    "websockets" : {
       "ie" : [
@@ -168,18 +156,67 @@
       ],
       "android" : [],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "12.1",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
+   "filewrite" : {
+      "ie" : [],
+      "blackberry" : [
+         10,
+         "y"
+      ],
+      "op_mob" : [
+         14,
+         "y"
+      ],
+      "ios_saf" : [],
+      "firefox" : [],
+      "android" : [],
+      "and_chr" : [
+         25,
+         "y"
+      ]
+   },
+   "flexbox" : {
+      "ie" : [
+         11,
+         "y"
+      ],
+      "blackberry" : [
+         10,
+         "y"
+      ],
+      "op_mob" : [
+         12.1,
+         "y"
+      ],
+      "ios_saf" : [
+         7,
+         "y"
+      ],
+      "firefox" : [
+         22,
+         "p"
+      ],
+      "android" : [
+         2.1,
+         "p"
+      ],
+      "and_chr" : [
+         25,
+         "y"
+      ]
+   },
+   "autocomplete" : {},
    "video" : {
       "ie" : [
          9,
@@ -202,26 +239,17 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "11",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
-   },
-   "discovery" : {
-      "ie" : [],
-      "blackberry" : [],
-      "op_mob" : [],
-      "ios_saf" : [],
-      "firefox" : [],
-      "android" : [],
-      "and_chr" : []
    },
    "canvas" : {
       "ie" : [
@@ -245,17 +273,35 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "11",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
+   },
+   "discovery" : {
+      "ie" : [],
+      "blackberry" : [],
+      "op_mob" : [],
+      "ios_saf" : [],
+      "firefox" : [],
+      "android" : [],
+      "and_chr" : []
+   },
+   "calendar" : {
+      "ie" : [],
+      "blackberry" : [],
+      "op_mob" : [],
+      "ios_saf" : [],
+      "firefox" : [],
+      "android" : [],
+      "and_chr" : []
    },
    "inputtext" : {
       "ie" : [
@@ -281,16 +327,11 @@
       "android" : [
          "3",
          "p"
+      ],
+      "and_chr" : [
+         "18",
+         "y"
       ]
-   },
-   "calendar" : {
-      "ie" : [],
-      "blackberry" : [],
-      "op_mob" : [],
-      "ios_saf" : [],
-      "firefox" : [],
-      "android" : [],
-      "and_chr" : []
    },
    "perf-timeline" : {},
    "inputdate" : {
@@ -309,45 +350,21 @@
       ],
       "android" : [],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "11",
+         "10 (metro)",
          "y"
       ],
       "firefox" : []
    },
-   "css-border" : {
-      "ie" : [],
-      "blackberry" : [
-         10,
-         "y"
-      ],
-      "op_mob" : [
-         11,
-         "p"
-      ],
-      "ios_saf" : [
-         3.2,
-         "p"
-      ],
-      "firefox" : [
-         15,
-         "p"
-      ],
-      "android" : [
-         2.1,
-         "p"
-      ],
-      "and_chr" : [
-         18,
-         "y"
-      ]
-   },
    "inputaccept" : {
       "ie" : [],
-      "blackberry" : [],
+      "blackberry" : [
+         "BB10",
+         "y"
+      ],
       "op_mob" : [],
       "ios_saf" : [
          "6.0",
@@ -367,11 +384,41 @@
          "p"
       ]
    },
+   "css-border" : {
+      "ie" : [
+         11,
+         "y"
+      ],
+      "blackberry" : [
+         10,
+         "y"
+      ],
+      "op_mob" : [
+         14,
+         "y"
+      ],
+      "ios_saf" : [
+         6,
+         "y"
+      ],
+      "firefox" : [
+         22,
+         "y"
+      ],
+      "android" : [
+         2.1,
+         "p"
+      ],
+      "and_chr" : [
+         25,
+         "y"
+      ]
+   },
    "accelerometer" : {
       "ie" : [],
       "blackberry" : [
          10,
-         "y"
+         "p"
       ],
       "op_mob" : [
          12,
@@ -379,23 +426,20 @@
       ],
       "ios_saf" : [
          4.2,
-         "y"
+         "p"
       ],
       "android" : [
          3,
-         "y"
+         "p"
       ],
       "and_chr" : [
-         18,
-         "y"
+         25,
+         "p"
       ],
-      "op_mobile" : [
-         "12",
-         "y"
-      ],
+      "op_mobile" : [],
       "firefox" : [
-         15,
-         "y"
+         22,
+         "p"
       ]
    },
    "filereader" : {
@@ -420,15 +464,15 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "12",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
@@ -454,15 +498,15 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "11",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
@@ -496,7 +540,7 @@
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ],
       "android" : [
@@ -504,11 +548,12 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ]
    },
    "systems-info" : {},
+   "canvasproxy" : {},
    "srcset" : {
       "ie" : [],
       "blackberry" : [],
@@ -518,10 +563,11 @@
       "android" : [],
       "and_chr" : []
    },
+   "contacts-sys" : {},
    "postmessage" : {
       "ie" : [
-         8,
-         "p"
+         11,
+         "y"
       ],
       "blackberry" : [
          7,
@@ -536,7 +582,7 @@
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ],
       "android" : [
@@ -544,7 +590,7 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ]
    },
@@ -557,7 +603,7 @@
    "online" : {
       "ie" : [
          "8",
-         "y"
+         "p"
       ],
       "blackberry" : [],
       "op_mob" : [],
@@ -567,7 +613,10 @@
          "2.2",
          "y"
       ],
-      "and_chr" : []
+      "and_chr" : [
+         "18",
+         "y"
+      ]
    },
    "cors" : {
       "ie" : [
@@ -591,49 +640,15 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "12",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
-         "y"
-      ]
-   },
-   "manifest" : {
-      "ie" : [
-         10,
-         "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "op_mob" : [
-         11,
-         "y"
-      ],
-      "ios_saf" : [
-         3.2,
-         "y"
-      ],
-      "android" : [
-         2.1,
-         "y"
-      ],
-      "and_chr" : [
-         18,
-         "y"
-      ],
-      "op_mobile" : [
-         "11",
-         "y"
-      ],
-      "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
@@ -659,15 +674,49 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "12.1",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
+         "y"
+      ]
+   },
+   "manifest" : {
+      "ie" : [
+         10,
+         "y"
+      ],
+      "blackberry" : [
+         7,
+         "y"
+      ],
+      "op_mob" : [
+         11,
+         "y"
+      ],
+      "ios_saf" : [
+         3.2,
+         "y"
+      ],
+      "android" : [
+         2.1,
+         "y"
+      ],
+      "and_chr" : [
+         25,
+         "y"
+      ],
+      "op_mobile" : [
+         "10 (metro)",
+         "y"
+      ],
+      "firefox" : [
+         22,
          "y"
       ]
    },
@@ -698,39 +747,19 @@
       "android" : [],
       "and_chr" : []
    },
+   "mediaqueries4" : {},
+   "webanimations" : {},
    "drm" : {
-      "ie" : [],
+      "ie" : [
+         "11",
+         "y"
+      ],
       "blackberry" : [],
       "op_mob" : [],
       "ios_saf" : [],
       "firefox" : [],
       "android" : [],
       "and_chr" : []
-   },
-   "nav-timing" : {
-      "ie" : [
-         9,
-         "y"
-      ],
-      "blackberry" : [
-         10,
-         "y"
-      ],
-      "op_mob" : [],
-      "ios_saf" : [],
-      "android" : [
-         4,
-         "y"
-      ],
-      "and_chr" : [
-         18,
-         "y"
-      ],
-      "op_mobile" : [],
-      "firefox" : [
-         15,
-         "y"
-      ]
    },
    "css-2d" : {
       "ie" : [
@@ -754,17 +783,57 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "11",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
+   },
+   "nav-timing" : {
+      "ie" : [
+         9,
+         "y"
+      ],
+      "blackberry" : [
+         10,
+         "y"
+      ],
+      "op_mob" : [
+         14,
+         "y"
+      ],
+      "ios_saf" : [],
+      "android" : [
+         4,
+         "y"
+      ],
+      "and_chr" : [
+         25,
+         "y"
+      ],
+      "op_mobile" : [
+         "10 (metro)",
+         "y"
+      ],
+      "firefox" : [
+         22,
+         "y"
+      ]
+   },
+   "recording" : {
+      "ie" : [],
+      "blackberry" : [],
+      "op_mob" : [],
+      "ios_saf" : [],
+      "firefox" : [],
+      "android" : [],
+      "and_chr" : []
    },
    "woff" : {
       "ie" : [
@@ -784,12 +853,12 @@
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ],
       "android" : [],
       "and_chr" : [
-         18,
+         25,
          "y"
       ]
    },
@@ -815,15 +884,15 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "11",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
@@ -868,15 +937,15 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "11",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
@@ -896,18 +965,24 @@
       ],
       "blackberry" : [
          10,
+         "p"
+      ],
+      "op_mob" : [
+         14,
          "y"
       ],
-      "op_mob" : [],
       "ios_saf" : [],
       "android" : [],
       "and_chr" : [
-         18,
-         "p"
+         25,
+         "y"
       ],
-      "op_mobile" : [],
+      "op_mobile" : [
+         "10 (metro)",
+         "y"
+      ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
@@ -920,6 +995,7 @@
       "android" : [],
       "and_chr" : []
    },
+   "runtime" : {},
    "ambientlight" : {
       "ie" : [],
       "blackberry" : [],
@@ -944,7 +1020,10 @@
    },
    "getusermedia" : {
       "ie" : [],
-      "blackberry" : [],
+      "blackberry" : [
+         10,
+         "y"
+      ],
       "op_mob" : [
          12,
          "y"
@@ -952,24 +1031,23 @@
       "ios_saf" : [],
       "android" : [],
       "and_chr" : [],
-      "op_mobile" : [
-         "12",
-         "y"
-      ],
+      "op_mobile" : [],
       "firefox" : []
    },
-   "res-timing" : {},
-   "widgets" : {
-      "ie" : [],
-      "blackberry" : [],
-      "op_mob" : [
-         "9.5",
+   "res-timing" : {
+      "ie" : [
+         "10",
          "y"
       ],
+      "blackberry" : [],
+      "op_mob" : [],
       "ios_saf" : [],
       "firefox" : [],
       "android" : [],
-      "and_chr" : []
+      "and_chr" : [
+         "26",
+         "y"
+      ]
    },
    "css-boxshadow" : {
       "ie" : [
@@ -989,7 +1067,7 @@
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ],
       "android" : [
@@ -997,9 +1075,33 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ]
+   },
+   "quota" : {
+      "ie" : [],
+      "blackberry" : [],
+      "op_mob" : [],
+      "ios_saf" : [],
+      "firefox" : [],
+      "android" : [],
+      "and_chr" : [
+         "18",
+         "y"
+      ]
+   },
+   "widgets" : {
+      "ie" : [],
+      "blackberry" : [],
+      "op_mob" : [
+         "9.5",
+         "y"
+      ],
+      "ios_saf" : [],
+      "firefox" : [],
+      "android" : [],
+      "and_chr" : []
    },
    "aria" : {
       "ie" : [
@@ -1016,12 +1118,12 @@
          "p"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ],
       "android" : [],
       "and_chr" : [
-         18,
+         25,
          "p"
       ]
    },
@@ -1037,6 +1139,7 @@
       "android" : [],
       "and_chr" : []
    },
+   "inputmode" : {},
    "vibration" : {
       "ie" : [],
       "blackberry" : [],
@@ -1080,13 +1183,10 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
-      "op_mobile" : [
-         "11",
-         "y"
-      ],
+      "op_mobile" : [],
       "firefox" : []
    },
    "audio" : {
@@ -1111,40 +1211,67 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "11",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
    "datalist" : {
       "ie" : [
          10,
+         "p"
+      ],
+      "blackberry" : [
+         10,
          "y"
       ],
-      "blackberry" : [],
       "op_mob" : [
          10,
          "y"
       ],
       "ios_saf" : [],
       "firefox" : [
-         15,
+         22,
          "y"
       ],
       "android" : []
+   },
+   "crypto" : {
+      "ie" : [],
+      "blackberry" : [],
+      "op_mob" : [],
+      "ios_saf" : [],
+      "firefox" : [
+         "19",
+         "p"
+      ],
+      "android" : [],
+      "and_chr" : [
+         "25",
+         "p"
+      ]
    },
    "setimmediate" : {
       "ie" : [
          "10",
          "y"
       ],
+      "blackberry" : [],
+      "op_mob" : [],
+      "ios_saf" : [],
+      "firefox" : [],
+      "android" : [],
+      "and_chr" : []
+   },
+   "wi-local" : {
+      "ie" : [],
       "blackberry" : [],
       "op_mob" : [],
       "ios_saf" : [],
@@ -1168,15 +1295,12 @@
       ],
       "android" : [],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
-      "op_mobile" : [
-         "11",
-         "y"
-      ],
+      "op_mobile" : [],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
@@ -1202,15 +1326,15 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "11",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
@@ -1236,21 +1360,24 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "12",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
    "networkapi" : {
       "ie" : [],
-      "blackberry" : [],
+      "blackberry" : [
+         "BB10",
+         "y"
+      ],
       "op_mob" : [],
       "ios_saf" : [],
       "android" : [
@@ -1259,16 +1386,10 @@
       ],
       "and_chr" : [],
       "op_mobile" : [],
-      "firefox" : []
-   },
-   "humidity" : {
-      "ie" : [],
-      "blackberry" : [],
-      "op_mob" : [],
-      "ios_saf" : [],
-      "firefox" : [],
-      "android" : [],
-      "and_chr" : []
+      "firefox" : [
+         "10",
+         "p"
+      ]
    },
    "picture" : {
       "ie" : [],
@@ -1279,41 +1400,29 @@
       "android" : [],
       "and_chr" : []
    },
-   "animation-timing" : {
-      "ie" : [
-         10,
-         "y"
-      ],
-      "blackberry" : [
-         10,
-         "y"
-      ],
+   "humidity" : {
+      "ie" : [],
+      "blackberry" : [],
       "op_mob" : [],
-      "ios_saf" : [
-         6,
-         "y"
-      ],
+      "ios_saf" : [],
+      "firefox" : [],
       "android" : [],
-      "and_chr" : [
-         18,
-         "y"
-      ],
-      "op_mobile" : [],
-      "firefox" : [
-         15,
-         "y"
-      ]
+      "and_chr" : []
    },
+   "messaging-sys" : {},
    "css-3d" : {
       "ie" : [
          10,
-         "y"
+         "p"
       ],
       "blackberry" : [
          7,
          "y"
       ],
-      "op_mob" : [],
+      "op_mob" : [
+         14,
+         "y"
+      ],
       "ios_saf" : [
          3.2,
          "y"
@@ -1323,45 +1432,59 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
-      "op_mobile" : [],
+      "op_mobile" : [
+         "10 (metro)",
+         "y"
+      ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
-   "pointer-events" : {
-      "ie" : [],
-      "blackberry" : [
-         7,
+   "animation-timing" : {
+      "ie" : [
+         10,
          "y"
       ],
-      "op_mob" : [],
+      "blackberry" : [
+         10,
+         "y"
+      ],
+      "op_mob" : [
+         14,
+         "y"
+      ],
       "ios_saf" : [
-         3.2,
+         6,
+         "y"
+      ],
+      "android" : [],
+      "and_chr" : [
+         25,
+         "y"
+      ],
+      "op_mobile" : [
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
-         "y"
-      ],
-      "android" : [
-         2.1,
-         "y"
-      ],
-      "and_chr" : [
-         18,
+         22,
          "y"
       ]
    },
    "user-timing" : {},
-   "touchevent" : {
+   "pointer-events" : {
       "ie" : [
-         10,
-         "p"
+         11,
+         "y"
       ],
+      "op_mob" : []
+   },
+   "touchevent" : {
+      "ie" : [],
       "blackberry" : [
          7,
          "y"
@@ -1379,15 +1502,15 @@
          "y"
       ],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [
-         "11",
+         "10 (metro)",
          "y"
       ],
       "firefox" : [
-         15,
+         22,
          "y"
       ]
    },
@@ -1406,7 +1529,11 @@
          "4",
          "p"
       ],
-      "android" : []
+      "android" : [],
+      "and_chr" : [
+         "18",
+         "y"
+      ]
    },
    "notification" : {
       "ie" : [],
@@ -1414,15 +1541,21 @@
          10,
          "y"
       ],
-      "op_mob" : [],
+      "op_mob" : [
+         14,
+         "p"
+      ],
       "ios_saf" : [],
       "android" : [],
       "and_chr" : [
-         18,
+         25,
          "p"
       ],
       "op_mobile" : [],
-      "firefox" : []
+      "firefox" : [
+         22,
+         "y"
+      ]
    },
    "filesystem" : {
       "ie" : [],
@@ -1430,29 +1563,38 @@
          10,
          "y"
       ],
-      "op_mob" : [],
+      "op_mob" : [
+         14,
+         "y"
+      ],
       "ios_saf" : [],
       "android" : [],
       "and_chr" : [
-         18,
+         25,
          "y"
       ],
       "op_mobile" : [],
       "firefox" : []
    },
    "fullscreen" : {
-      "ie" : [],
+      "ie" : [
+         11,
+         "y"
+      ],
       "blackberry" : [
          10,
          "p"
       ],
-      "op_mob" : [],
+      "op_mob" : [
+         14,
+         "y"
+      ],
       "ios_saf" : [],
       "android" : [],
       "and_chr" : [],
       "op_mobile" : [],
       "firefox" : [
-         15,
+         22,
          "p"
       ]
    }
