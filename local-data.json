@@ -24,7 +24,6 @@
 "messaging":{"*":0},
 "postmessage":{"blackberry":"7"},
 "p2p":{"*":0},
-"widgets":{"op_mob": "9.5", "*":0},
 "setimmediate":{"ie":"10", "*":0},
 "visibilitychange":{"ie":"10","firefox":"10","*":0},
 "proximity":{"firefox":15, "*":0},
