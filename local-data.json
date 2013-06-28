@@ -45,5 +45,8 @@
 "quota":{"and_chr":"18","*":0},
 "recording":{"*":0},
 "input-datetime":{"firefox":"19:p"},
-"res-timing":{"and_chr":"26",  "ie":"10","*":0}
+"res-timing":{"and_chr":"26",  "ie":"10","*":0},
+// Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=778617
+// Chrome: https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/TqIiWnAp-b0
+"mse":{"ie":"11","*":0}
 }
