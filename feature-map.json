@@ -85,5 +85,6 @@
 "autocomplete":[],
 "messaging-sys":[],
 "runtime":[],
-"mse":[]
+"mse":[],
+"nfc":[]
 }
