@@ -16,10 +16,10 @@ browsers = ["ios_saf","blackberry", "ie", "firefox", "android", "op_mob", "and_c
 browsersImages = { "ios_saf" : {"name": "Safari on iOS", "x":0,"y":0,"width":60,"height":60, "url":"safari.jpg"},
                    "blackberry": {"name": "Blackberry browser", "x":0,"y":75,"width":60,"height":49.5, "url":"blackberry.jpg", "caniusename": "bb"},
                    "ie": {"name": "Internet Explorer on Windows Phone", "x":63,"y":70,"width":60,"height":60, "url":"ie.png"},
-                   "firefox": {"name": "Firefox mobile", "x":130,"y":70,"width":60,"height":60, "url":"firefox.png", "caniusename": "and_ff", "caniuse_minversion": 15},
+                   "firefox": {"name": "Firefox mobile", "x":130,"y":70,"width":60,"height":60, "url":"firefox.png", "caniusename": "and_ff", "caniuse_minversion": 22},
                    "android": {"name": "Android browser", "x":65,"y":0,"width":60,"height":60, "url":"android.png"},
                    "op_mob":  {"name": "Opera mobile", "x":130,"y":0,"width":60,"height":60, "url":"opera.png"},
-                   "and_chr":  {"name": "Chrome for Android", "x":195,"y":0,"width":60,"height":59, "url":"chrome.png", "caniuse_minversion": 18}
+                   "and_chr":  {"name": "Chrome for Android", "x":195,"y":0,"width":60,"height":59, "url":"chrome.png", "caniuse_minversion": 25}
 }
 
 mergeddata = {}
@@ -39,10 +39,14 @@ for feature,sourcelist in featuremap.iteritems():
     mergeddata[feature] = {}
     if len(sourcelist)==2:
         for browser,version in mobilehtml[sourcelist[1]].iteritems():
-            if version:
-                mergeddata[feature][browser] = [version,"y"]
-            else:
-                mergeddata[feature][browser] = []
+            # data from mobilehtml5.org splits blackberry data in bb10
+            if browser == "bb10":
+                browser="blackberry"
+            if not mergeddata[feature].has_key(browser):
+                if version:
+                    mergeddata[feature][browser] = [version,"y"]
+                else:
+                    mergeddata[feature][browser] = []
     if localdata.has_key(feature):
         for b in browsers:
             if localdata[feature].has_key(b):
