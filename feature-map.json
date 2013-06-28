@@ -86,5 +86,6 @@
 "messaging-sys":[],
 "runtime":[],
 "mse":[],
-"nfc":[]
+"nfc":[],
+"navigationcontroller":[]
 }
