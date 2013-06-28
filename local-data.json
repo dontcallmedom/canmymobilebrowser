@@ -46,5 +46,6 @@
 "recording":{"*":0},
 "input-datetime":{"firefox":"19:p"},
 "res-timing":{"and_chr":"26",  "ie":"10","*":0},
-"mse":{"ie":"11","*":0}
+"mse":{"ie":"11","*":0},
+"nfc":{"*":0}
 }
