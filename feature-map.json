@@ -87,5 +87,6 @@
 "runtime":[],
 "mse":[],
 "nfc":[],
-"navigationcontroller":[]
+"serviceworker":[],
+"lazy":[]
 }

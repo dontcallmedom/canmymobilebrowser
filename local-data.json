@@ -47,6 +47,7 @@
 "res-timing":{"and_chr":"26",  "ie":"10","*":0},
 "mse":{"ie":"11","*":0},
 "nfc":{"*":0},
-"navigationcontroller":{"*":0},
-"manifestjson":{"*":0}
+"serviceworker":{"*":0},
+"manifestjson":{"*":0},
+"lazy":{"ie":"11:p","*":0}
 }
