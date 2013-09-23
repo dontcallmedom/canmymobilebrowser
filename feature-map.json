@@ -89,5 +89,6 @@
 "nfc":[],
 "serviceworker":[],
 "lazy":[],
-"ime":[]
+"ime":[],
+"mediacapture":[]
 }

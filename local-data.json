@@ -50,5 +50,6 @@
 "serviceworker":{"*":0},
 "manifestjson":{"*":0},
 "lazy":{"ie":"11:p","*":0},
-"ime":{"*":0}
+"ime":{"*":0},
+"mediacapture":{"*":0}
 }
