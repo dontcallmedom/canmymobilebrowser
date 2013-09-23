@@ -42,6 +42,10 @@ for feature,sourcelist in featuremap.iteritems():
             # data from mobilehtml5.org splits blackberry data in bb10
             if browser == "bb10":
                 browser="blackberry"
+
+            # data from mobilehtml5.org splits ie data in ie11
+            if browser == "ie11":
+                browser="ie"
             if not mergeddata[feature].has_key(browser):
                 if version:
                     mergeddata[feature][browser] = [version,"y"]
