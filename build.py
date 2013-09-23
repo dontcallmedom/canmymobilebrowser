@@ -19,7 +19,7 @@ browsersImages = { "ios_saf" : {"name": "Safari on iOS", "x":0,"y":0,"width":60,
                    "firefox": {"name": "Firefox mobile", "x":130,"y":70,"width":60,"height":60, "url":"firefox.png", "caniusename": "and_ff", "caniuse_minversion": 24},
                    "android": {"name": "Android browser", "x":65,"y":0,"width":60,"height":60, "url":"android.png"},
                    "op_mob":  {"name": "Opera mobile", "x":130,"y":0,"width":60,"height":60, "url":"opera.png"},
-                   "and_chr":  {"name": "Chrome for Android", "x":195,"y":0,"width":60,"height":59, "url":"chrome.png", "caniuse_minversion": 25}
+                   "and_chr":  {"name": "Chrome for Android", "x":195,"y":0,"width":60,"height":59, "url":"chrome.png", "caniuse_minversion": 29}
 }
 
 mergeddata = {}
