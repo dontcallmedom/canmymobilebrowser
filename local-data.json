@@ -37,7 +37,7 @@
 "discovery": {"*":0},
 "picture": {"*":0},
 "srcset": {"*":0},
-"ambientlight": {"*":0},
+"ambientlight": {"firefox":"22","*":0},
 "humidity": {"*":0},
 "wi-local":{"*":0},
 "crypto":{"firefox":"19:p", "and_chr":"25:p","*":0},
@@ -49,5 +49,6 @@
 "nfc":{"*":0},
 "serviceworker":{"*":0},
 "manifestjson":{"*":0},
-"lazy":{"ie":"11:p","*":0}
+"lazy":{"ie":"11:p","*":0},
+"ime":{"*":0}
 }
