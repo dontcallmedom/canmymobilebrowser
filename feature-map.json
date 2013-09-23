@@ -90,5 +90,6 @@
 "serviceworker":[],
 "lazy":[],
 "ime":[],
-"mediacapture":[]
+"mediacapture":[],
+"cryptokey":[]
 }
