@@ -31,13 +31,17 @@
     <xsl:call-template name="cani">
       <xsl:with-param name="col"  select="10"/>
     </xsl:call-template>
-    <xsl:text>,"op_mobile":</xsl:text>
+    <xsl:text>,"ie11":</xsl:text>
     <xsl:call-template name="cani">
       <xsl:with-param name="col"  select="11"/>
     </xsl:call-template>
+    <xsl:text>,"op_mobile":</xsl:text>
+    <xsl:call-template name="cani">
+      <xsl:with-param name="col"  select="12"/>
+    </xsl:call-template>
     <xsl:text>,"firefox":</xsl:text>
     <xsl:call-template name="cani">
-      <xsl:with-param name="col"  select="13"/>
+      <xsl:with-param name="col"  select="14"/>
     </xsl:call-template>
     <xsl:text>}</xsl:text>
     <xsl:if test="position()!=last()">
