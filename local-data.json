@@ -23,7 +23,7 @@
 "networkapi":{"android": "2.2:p", "firefox": "10:p", "*": 0},
 "messaging":{"*":0},
 "postmessage":{"blackberry":"7"},
-"p2p":{"*":0},
+"p2p":{"firefox":"24:p", "and_chr":"29:p", "*":0},
 "setimmediate":{"ie":"10", "*":0},
 "visibilitychange":{"ie":"10","firefox":"10","*":0},
 "proximity":{"firefox":15, "*":0},
