@@ -52,7 +52,7 @@
 "networkapi":[null, "Network Information API"],
 "messaging":[],
 "postmessage":["x-doc-messaging"],
-"p2p":[null, "WebRTC"],
+"p2p":["rtcpeerconnection", "WebRTC"],
 "manifest":["offline-apps", "Application Cache"],
 "manifestjson":[],
 "nav-timing":["nav-timing","Navigation Timing API"],
