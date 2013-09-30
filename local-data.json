@@ -56,5 +56,6 @@
 "getusermedia":{"firefox":"24"},
 "getusermedia-cap":{"*":"0"},
 "push":{"*":"0"},
-"svg2":{"*":"0"}
+"svg2":{"*":"0"},
+"srcN":{"*":"0"}
 }
