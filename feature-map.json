@@ -91,5 +91,8 @@
 "lazy":[],
 "ime":[],
 "mediacapture":[],
-"cryptokey":[]
+"cryptokey":[],
+"getusermedia-cap":[],
+"push":[],
+"svg2":[]
 }

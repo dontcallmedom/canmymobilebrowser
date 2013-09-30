@@ -53,5 +53,8 @@
 "ime":{"*":0},
 "mediacapture":{"opera":"16","*":0},
 "cryptokey":{"*":0},
-"getusermedia":{"firefox":"24"}
+"getusermedia":{"firefox":"24"},
+"getusermedia-cap":{"*":"0"},
+"push":{"*":"0"},
+"svg2":{"*":"0"}
 }
