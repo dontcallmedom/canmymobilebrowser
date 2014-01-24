@@ -90,7 +90,7 @@
 "serviceworker":[],
 "lazy":[],
 "ime":[],
-"mediacapture":[],
+"imagecapture":[],
 "cryptokey":[],
 "getusermedia-cap":[],
 "push":[],
