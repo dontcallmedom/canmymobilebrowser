@@ -65,7 +65,7 @@
 "fullscreen":["fullscreen", "FullScreen API"],
 "screenlock":[],
 "proximity":[],
-"drm":[],
+"eme":[],
 "ambientlight":[],
 "gallery":[],
 "humidity":[],
