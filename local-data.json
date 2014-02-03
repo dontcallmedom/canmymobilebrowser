@@ -22,7 +22,7 @@
 "networkapi":{"android": "2.2:p", "firefox": "10:p", "*": 0},
 "messaging":{"*":0},
 "postmessage":{"blackberry":"7"},
-"p2p":{"firefox":"24:p", "and_chr":"29:p", "*":0},
+"p2p":{"firefox":"24:p", "and_chr":"29:p", "opera":"19","*":0},
 "setimmediate":{"ie":"10", "*":0},
 "visibilitychange":{"ie":"10","firefox":"10","*":0},
 "proximity":{"firefox":15, "*":0},
@@ -42,7 +42,7 @@
 "crypto":{"firefox":"19:p", "and_chr":"25:p","*":0},
 "quota":{"and_chr":"18","*":0},
 "recording":{"*":0},
-"input-datetime":{"firefox":"19:p"},
+"inputdate":{"firefox":"19:p"},
 "res-timing":{"and_chr":"26",  "ie":"10","*":0},
 "mse":{"ie":"11","and_chr":"23","firefox":"25:p"},
 "nfc":{"*":0},
@@ -59,5 +59,7 @@
 "srcN":{"*":"0"},
 "smooth-scroll":{"*":"0"},
 "woff2":{"*":"0"},
-"beacon":{"*":"0"}
+"beacon":{"*":"0"},
+"perf-timeline":{"ie":"11", "and_chr":"30"},
+"user-timing":{"ie":"11", "and_chr":"30"}
 }
