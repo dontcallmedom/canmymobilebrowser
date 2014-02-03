@@ -13,7 +13,6 @@
 "vibration": {"firefox": "11", "*":0},
 "intents":{"*":0},
 "notification":{"firefox": "4" , "*":0},
-"speechinput":{"*":0},
 "aria":{"blackberry":0},
 "contacts":{"*":0},
 "calendar":{"*":0},
@@ -59,5 +58,6 @@
 "svg2":{"*":"0"},
 "srcN":{"*":"0"},
 "smooth-scroll":{"*":"0"},
-"woff2":{"*":"0"}
+"woff2":{"*":"0"},
+"beacon":{"*":"0"}
 }
