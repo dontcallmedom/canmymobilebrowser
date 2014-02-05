@@ -118,7 +118,7 @@ for feature,sourcelist in featuremap.iteritems():
    height="70"
    viewBox="0 0 255 140"
    version="1.1">
-     <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.8}</style>""")
+     <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.8} text.symbol { font-size:40px;} text.versions { font-size:20px;}</style>""")
     image.write("<title>Support for %s</title>" % (feature))
     for b in browsers:
         bData = browsersImages[b]
@@ -127,21 +127,21 @@ for feature,sourcelist in featuremap.iteritems():
                 if mergeddata[feature][b][1] == "p":
                     text = "Partial support in %s from version %s" % (bData["name"], mergeddata[feature][b][0])
                     className = "partial"
-                    label = "<rect x='%s' y='%s' width='60' height='22' fill='#ff0' opacity='0.8'></rect><text x='%s' y='%s' font-size='20px'>%s+</text>" % (bData["x"], bData["y"] + bData["height"]/2, bData["x"] + 3, bData["y"] + bData["height"]/2 + 15, mergeddata[feature][b][0])
+                    label = "<rect x='%s' y='%s' width='60' height='22' fill='#ff0' opacity='0.8'></rect><text x='%s' y='%s' class='versions'>%s+</text>" % (bData["x"], bData["y"] + bData["height"]/2, bData["x"] + 3, bData["y"] + bData["height"]/2 + 15, mergeddata[feature][b][0])
                 else:
                     text = "Supported in %s from version %s" % (bData["name"],mergeddata[feature][b][0])
                     className =""
-                    label = "<rect x='%s' y='%s' width='60' height='22' fill='#fff' opacity='0.8'></rect><text x='%s' y='%s' font-size='20px'>%s+</text>" % (bData["x"], bData["y"] + bData["height"]/2, bData["x"] + 3 , bData["y"] + bData["height"]/2 + 15, mergeddata[feature][b][0])
+                    label = "<rect x='%s' y='%s' width='60' height='22' fill='#fff' opacity='0.8'></rect><text x='%s' y='%s' class='versions'>%s+</text>" % (bData["x"], bData["y"] + bData["height"]/2, bData["x"] + 3 , bData["y"] + bData["height"]/2 + 15, mergeddata[feature][b][0])
             else:
                 className = "not"
                 text = "Not supported in %s" % (bData["name"])
-                label = "<text x='%s' y='%s' font-size='40px' fill='red' text-anchor='middle'>X</text>" % (bData["x"] + bData["width"]/2, bData["y"] + bData["height"]/2 + 15)
+                label = "<text x='%s' y='%s' class='symbol' fill='red' text-anchor='middle'>X</text>" % (bData["x"] + bData["width"]/2, bData["y"] + bData["height"]/2 + 15)
         else:
             className = "unknown"
             text = "Supported in %s unknown" % (bData["name"])
-            label = "<text x='%s' y='%s' font-size='40px' fill='blue' text-anchor='middle'>?</text>" % (bData["x"] + bData["width"]/2, bData["y"] + bData["height"]/2 + 15)
+            label = "<text x='%s' y='%s' class='symbol' fill='blue' text-anchor='middle'>?</text>" % (bData["x"] + bData["width"]/2, bData["y"] + bData["height"]/2 + 15)
         image.write("<g><title>%s</title>" %(text))
-        image.write("<image xlink:href='../%s' class='%s' x='%s' y='%s' width='%s' height='%s'></image>" %(bData["url"], className, bData["x"], bData["y"], bData["width"], bData["height"]))
+        image.write("<image xlink:href='%s' class='%s' x='%s' y='%s' width='%s' height='%s'></image>" %(bData["url"], className, bData["x"], bData["y"], bData["width"], bData["height"]))
         image.write(label)
         image.write("</g>\n")
     image.write("""<script type='text/javascript'>
