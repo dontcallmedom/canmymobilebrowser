@@ -30,7 +30,7 @@
 "css-animation": {"blackberry":"6"},
 "css-transitions": {"blackberry":"6"},
 "webaudio": {"ios_saf":6},
-"screenlock": {"firefox":14},
+"screenlock": {"firefox":14, "ie":"11"},
 "eme": {"ie":"11","*":0},
 "gallery": {"*":0},
 "discovery": {"*":0},
