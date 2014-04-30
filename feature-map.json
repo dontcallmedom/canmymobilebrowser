@@ -102,5 +102,6 @@
 "csp":["contentsecuritypolicy"],
 "subres-integrity":[],
 "iframe-sandbox":["iframe-sandbox"],
-"dnt":[]
+"dnt":[],
+"css-snappoints":[]
 }
