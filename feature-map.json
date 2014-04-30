@@ -98,5 +98,9 @@
 "srcN":[],
 "smooth-scroll":[],
 "woff2":[],
-"beacon":[]
+"beacon":[],
+"csp":["contentsecuritypolicy"],
+"subres-integrity":[],
+"iframe-sandbox":["iframe-sandbox"],
+"dnt":[]
 }
