@@ -67,5 +67,6 @@
 "css-snappoints":{"ie":"10:p","*":0},
 "css-font-loading":{"and_chr":"35","opera":"22","*":0},
 "css-will-change":{"and_chr":"36","*":0},
-"html5-download":{"and_chr":"31","firefox":"27"}
+"html5-download":{"and_chr":"31","firefox":"27"},
+"webanimations":{"and_chr":"36","opera":"23"}
 }
