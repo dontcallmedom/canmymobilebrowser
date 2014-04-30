@@ -59,7 +59,7 @@
 "srcN":{"*":"0"},
 "smooth-scroll":{"*":"0"},
 "woff2":{"*":"0"},
-"beacon":{"*":"0"},
+"beacon":{"firefox":"31:p","*":"0"},
 "perf-timeline":{"ie":"11", "and_chr":"30"},
 "user-timing":{"ie":"11", "and_chr":"30"},
 "subres-integrity":{"*":0},
