@@ -49,7 +49,7 @@
 "serviceworker":{"*":0},
 "manifestjson":{"*":0},
 "lazy":{"ie":"11:p","*":0},
-"ime":{"*":0},
+"ime":{"ie":"11","*":0},
 "imagecapture":{"opera":"16","*":0},
 "cryptokey":{"*":0},
 "getusermedia":{"firefox":"24"},
