@@ -104,5 +104,6 @@
 "iframe-sandbox":["iframe-sandbox"],
 "dnt":[],
 "css-snappoints":[],
-"css-font-loading":[]
+"css-font-loading":[],
+"css-will-change":[]
 }
