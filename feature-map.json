@@ -105,5 +105,6 @@
 "dnt":[],
 "css-snappoints":[],
 "css-font-loading":[],
-"css-will-change":[]
+"css-will-change":[],
+"html5-download":["download"]
 }
