@@ -103,5 +103,6 @@
 "subres-integrity":[],
 "iframe-sandbox":["iframe-sandbox"],
 "dnt":[],
-"css-snappoints":[]
+"css-snappoints":[],
+"css-font-loading":[]
 }

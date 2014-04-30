@@ -64,5 +64,6 @@
 "user-timing":{"ie":"11", "and_chr":"30"},
 "subres-integrity":{"*":0},
 "dnt":{"firefox":"6","ie":"9","and_chr":"23", "ios_saf":"5","opera":"12"},
-"css-snappoints":{"ie":"10:p","*":0}
+"css-snappoints":{"ie":"10:p","*":0},
+"css-font-loading":{"and_chr":"35","opera":"22","*":0}
 }
