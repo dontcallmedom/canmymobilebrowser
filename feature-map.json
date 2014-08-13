@@ -70,7 +70,7 @@
 "gallery":[],
 "humidity":[],
 "discovery":[],
-"picture":["picture"],
+"picture":[],
 "srcset":["srcset"],
 "wi-local":[],
 "crypto":["cryptography"],
@@ -112,5 +112,6 @@
 "autocomplete-cc":[],
 "wake-lock":[],
 "background-sync":[],
-"namedwebsockets":[]
+"namedwebsockets":[],
+"indieui":[]
 }

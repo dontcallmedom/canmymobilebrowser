@@ -34,7 +34,7 @@
 "eme": {"ie":"11","and_chr":"32","*":0},
 "gallery": {"*":0},
 "discovery": {"*":0},
-"picture": {"*":0},
+"picture": {"and_chr":"38", "firefox":"33","*":0},
 "srcset": {"*":0},
 "ambientlight": {"firefox":"22","*":0},
 "humidity": {"*":0},
@@ -73,5 +73,6 @@
 "autocomplete-cc":{"and_chr":"31"},
 "wake-lock":{"*":0},
 "background-sync":{"*":0},
-"namedwebsockets":{"*":0}
+"namedwebsockets":{"*":0},
+"indieui":{"*":0}
 }
