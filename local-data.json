@@ -71,5 +71,6 @@
 "webanimations":{"and_chr":"36","opera":"23"},
 "autocomplete":{"and_chr":"31","opera":"21"},
 "autocomplete-cc":{"and_chr":"31"},
-"wake-lock":{"*":0}
+"wake-lock":{"*":0},
+"background-sync":{"*":0}
 }

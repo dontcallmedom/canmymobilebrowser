@@ -110,5 +110,6 @@
 "css-size-adjust":["text-size-adjust"],
 "viewport-units":["viewport-units"],
 "autocomplete-cc":[],
-"wake-lock":[]
+"wake-lock":[],
+"background-sync":[]
 }
