@@ -31,7 +31,7 @@
 "css-transitions": {"blackberry":"6"},
 "webaudio": {"ios_saf":6},
 "screenlock": {"firefox":14, "ie":"11"},
-"eme": {"ie":"11","*":0},
+"eme": {"ie":"11","and_chr":"32","*":0},
 "gallery": {"*":0},
 "discovery": {"*":0},
 "picture": {"*":0},
@@ -70,5 +70,6 @@
 "html5-download":{"and_chr":"31","firefox":"27"},
 "webanimations":{"and_chr":"36","opera":"23"},
 "autocomplete":{"and_chr":"31","opera":"21"},
-"autocomplete-cc":{"and_chr":"31"}
+"autocomplete-cc":{"and_chr":"31"},
+"wake-lock":{"*":0}
 }
