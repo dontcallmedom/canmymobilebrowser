@@ -69,5 +69,6 @@
 "css-will-change":{"and_chr":"36","*":0},
 "html5-download":{"and_chr":"31","firefox":"27"},
 "webanimations":{"and_chr":"36","opera":"23"},
-"autocomplete":{"and_chr":"31","opera":"21"}
+"autocomplete":{"and_chr":"31","opera":"21"},
+"autocomplete-cc":{"and_chr":"31"}
 }
