@@ -16,10 +16,10 @@ browsers = ["ios_saf","blackberry", "ie", "firefox", "android", "op_mob", "and_c
 browsersImages = { "ios_saf" : {"name": "Safari on iOS", "x":0,"y":0,"width":60,"height":60, "url":"safari.jpg"},
                    "blackberry": {"name": "Blackberry browser", "x":0,"y":75,"width":60,"height":49.5, "url":"blackberry.jpg", "caniusename": "bb"},
                    "ie": {"name": "Internet Explorer on Windows Phone", "x":63,"y":70,"width":60,"height":60, "url":"ie.png"},
-                   "firefox": {"name": "Firefox mobile", "x":130,"y":70,"width":60,"height":60, "url":"firefox.png", "caniusename": "and_ff", "caniuse_minversion": 24},
+                   "firefox": {"name": "Firefox mobile", "x":130,"y":70,"width":60,"height":60, "url":"firefox.png", "caniusename": "and_ff"},
                    "android": {"name": "Android browser", "x":65,"y":0,"width":60,"height":60, "url":"android.png"},
                    "op_mob":  {"name": "Opera mobile", "x":130,"y":0,"width":60,"height":60, "url":"opera.png"},
-                   "and_chr":  {"name": "Chrome for Android", "x":195,"y":0,"width":60,"height":59, "url":"chrome.png", "caniuse_minversion": 29}
+                   "and_chr":  {"name": "Chrome for Android", "x":195,"y":0,"width":60,"height":59, "url":"chrome.png"}
 }
 
 mergeddata = {}
@@ -80,9 +80,6 @@ for feature,sourcelist in featuremap.iteritems():
                         for version,status in caniuse["data"][sourcelist[0]]["stats"][caniusename].iteritems():
                             if len(str(version).split("-")) > 1:
                                 version = str(version).split("-")[0]
-                            if browsersImages[b].has_key("caniuse_minversion"):
-                                version=float(version)
-                                version = version + browsersImages[b]["caniuse_minversion"]
                             if status[0] == "y":
                                 min_version =  min(min_version,version) if min_version else version
                             elif status[0] == "a":
@@ -144,21 +141,6 @@ for feature,sourcelist in featuremap.iteritems():
         image.write("<image xlink:href='%s' class='%s' x='%s' y='%s' width='%s' height='%s'></image>" %(bData["url"], className, bData["x"], bData["y"], bData["width"], bData["height"]))
         image.write(label)
         image.write("</g>\n")
-    image.write("""<script type='text/javascript'>
-if (window.location.hash) {
-  var hash = window.location.hash.slice(1);
-  var features = document.documentElement.childNodes;
-  for (var i = 0; i&lt;features.length; i++) {
-    if (features[i].id) {
-       if (features[i].id != hash) {
-          features[i].style.display = 'none';
-       } else {
-          features[i].style.display = 'inherit';
-       }
-     }
-  }
-}
-</script>""")
     image.write("</svg>");
     image.close()
 
