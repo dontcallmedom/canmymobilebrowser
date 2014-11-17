@@ -13,7 +13,7 @@ mobilehtml = json.loads(mobilehtmlsrc.read())
 localdatasrc = open("local-data.json")
 localdata = json.loads(localdatasrc.read())
 browsers = ["ios_saf","blackberry", "ie", "firefox", "android", "op_mob", "and_chr"]
-browsersImages = { "ios_saf" : {"name": "Safari on iOS", "x":0,"y":0,"width":60,"height":60, "url":"safari.jpg"},
+browsersImages = { "ios_saf" : {"name": "Safari on iOS", "x":0,"y":0,"width":60,"height":60, "url":"safari.png"},
                    "blackberry": {"name": "Blackberry browser", "x":0,"y":75,"width":60,"height":49.5, "url":"blackberry.jpg", "caniusename": "bb"},
                    "ie": {"name": "Internet Explorer on Windows Phone", "x":63,"y":70,"width":60,"height":60, "url":"ie.png"},
                    "firefox": {"name": "Firefox mobile", "x":130,"y":70,"width":60,"height":60, "url":"firefox.png", "caniusename": "and_ff"},
