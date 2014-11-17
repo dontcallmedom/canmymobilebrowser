@@ -1,603 +1,108 @@
 {
-   "mediaqueries" : {
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "android" : [
-         2.1,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
+   "css-2d" : {
+      "and_chr" : [
+         "38",
          "y"
       ],
       "ie" : [
-         9,
-         "y"
-      ],
-      "and_chr" : [
-         29,
+         "10",
          "y"
       ],
       "ios_saf" : [
-         3.2,
+         "3.2",
+         "y"
+      ],
+      "android" : [
+         "2.1",
+         "y"
+      ],
+      "op_mob" : [
+         "11",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "op_mobile" : [
+         "11",
          "y"
       ]
    },
-   "websql" : {
-      "android" : [
-         2.1,
-         "y"
-      ],
-      "firefox" : [],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "ie" : [],
+   "p2p" : {
       "op_mobile" : [
          "11",
          "y"
       ],
-      "ios_saf" : [
-         3.2,
-         "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ]
-   },
-   "getusermedia-cap" : {
       "blackberry" : [],
-      "firefox" : [],
-      "ios_saf" : [],
-      "op_mob" : [],
-      "ie" : [],
-      "and_chr" : [],
-      "android" : []
-   },
-   "nav-timing" : {
-      "ios_saf" : [],
-      "op_mobile" : [
-         "14",
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "op_mob" : [],
-      "ie" : [
-         9,
-         "y"
-      ],
-      "blackberry" : [
-         10,
+      "firefox" : [
+         "32",
          "y"
       ],
       "android" : [
-         4,
+         "37",
          "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ]
-   },
-   "accelerometer" : {
-      "ios_saf" : [
-         4.2,
-         "p"
-      ],
-      "op_mobile" : [
-         "12",
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "p"
       ],
       "op_mob" : [
-         12,
+         "24",
          "y"
       ],
-      "ie" : [
-         11,
-         "p"
-      ],
-      "blackberry" : [
-         10,
-         "p"
-      ],
-      "android" : [
-         3,
-         "p"
-      ],
-      "firefox" : [
-         24,
-         "p"
+      "ios_saf" : [],
+      "ie" : [],
+      "and_chr" : [
+         "38",
+         "y"
       ]
    },
-   "css-snappoints" : {
-      "android" : [],
+   "css-animation" : {
+      "android" : [
+         "37",
+         "y"
+      ],
+      "op_mob" : [
+         "12.1",
+         "y"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "y"
+      ],
       "ie" : [
          "10",
-         "p"
-      ],
-      "op_mob" : [],
-      "and_chr" : [],
-      "ios_saf" : [],
-      "firefox" : [],
-      "blackberry" : []
-   },
-   "html5-download" : {
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "blackberry" : [
-         10,
-         "y"
-      ],
-      "ie" : [],
-      "op_mob" : [],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "android" : [
-         4.4,
-         "y"
-      ],
-      "ios_saf" : []
-   },
-   "vibration" : {
-      "android" : [
-         4.4,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "op_mobile" : [],
-      "ios_saf" : [],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "op_mob" : [],
-      "ie" : [],
-      "blackberry" : [
-         10,
-         "y"
-      ]
-   },
-   "ambientlight" : {
-      "ios_saf" : [],
-      "android" : [],
-      "ie" : [],
-      "and_chr" : [],
-      "op_mob" : [],
-      "blackberry" : [],
-      "firefox" : [
-         "22",
-         "y"
-      ]
-   },
-   "geolocation" : {
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         2.1,
-         "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
          "y"
       ],
       "and_chr" : [
-         29,
-         "y"
-      ],
-      "ie" : [
-         9,
-         "y"
-      ],
-      "op_mobile" : [
-         "11",
-         "y"
-      ],
-      "ios_saf" : [
-         3.2,
-         "y"
-      ]
-   },
-   "user-timing" : {
-      "ie" : [
-         10,
-         "y"
-      ],
-      "op_mob" : [],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "android" : [
-         4.4,
-         "y"
-      ],
-      "ios_saf" : [],
-      "firefox" : [],
-      "blackberry" : []
-   },
-   "xhr2" : {
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         3,
-         "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "ie" : [
-         10,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "ios_saf" : [
-         5,
-         "y"
-      ],
-      "op_mobile" : [
-         "12",
-         "y"
-      ]
-   },
-   "css-boxshadow" : {
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "ie" : [
-         9,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "android" : [
-         4,
-         "y"
-      ],
-      "ios_saf" : [
-         4,
-         "y"
-      ]
-   },
-   "runtime" : {},
-   "css-animation" : {
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         4,
-         "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "ie" : [
-         10,
+         "38",
          "y"
       ],
       "op_mobile" : [
          "12.1",
          "y"
       ],
-      "ios_saf" : [
-         3.2,
-         "y"
-      ]
-   },
-   "visibilitychange" : {
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "ie" : [
-         10,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "op_mobile" : [
-         "12.1",
-         "y"
-      ],
-      "ios_saf" : [
-         7,
+      "firefox" : [
+         "32",
          "y"
       ],
       "blackberry" : [
-         10,
-         "y"
-      ],
-      "android" : [
-         4.4,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ]
-   },
-   "wi-local" : {
-      "blackberry" : [],
-      "firefox" : [],
-      "ios_saf" : [],
-      "android" : [],
-      "and_chr" : [],
-      "ie" : [],
-      "op_mob" : []
-   },
-   "notification" : {
-      "blackberry" : [
-         10,
-         "y"
-      ],
-      "ie" : [],
-      "op_mob" : [],
-      "and_chr" : [],
-      "ios_saf" : [],
-      "op_mobile" : [],
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         4.4,
-         "p"
-      ]
-   },
-   "subres-integrity" : {
-      "ios_saf" : [],
-      "android" : [],
-      "and_chr" : [],
-      "ie" : [],
-      "op_mob" : [],
-      "blackberry" : [],
-      "firefox" : []
-   },
-   "woff" : {
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "ios_saf" : [
-         5,
-         "y"
-      ],
-      "android" : [
-         4.4,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "ie" : [
-         9,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ]
-   },
-   "push" : {
-      "android" : [],
-      "ie" : [],
-      "op_mob" : [],
-      "and_chr" : [],
-      "ios_saf" : [],
-      "firefox" : [],
-      "blackberry" : []
-   },
-   "proximity" : {
-      "ios_saf" : [],
-      "android" : [],
-      "ie" : [],
-      "and_chr" : [],
-      "op_mob" : [],
-      "blackberry" : [],
-      "firefox" : [
-         "15",
-         "y"
-      ]
-   },
-   "messaging-sys" : {},
-   "svg2" : {
-      "firefox" : [],
-      "blackberry" : [],
-      "and_chr" : [],
-      "ie" : [],
-      "op_mob" : [],
-      "android" : [],
-      "ios_saf" : []
-   },
-   "indexeddb" : {
-      "blackberry" : [
-         10,
-         "p"
-      ],
-      "ios_saf" : [],
-      "op_mobile" : [
-         "14",
-         "y"
-      ],
-      "op_mob" : [],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "ie" : [
-         10,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         4.4,
-         "y"
-      ]
-   },
-   "fullscreen" : {
-      "blackberry" : [
-         10,
-         "p"
-      ],
-      "ios_saf" : [],
-      "op_mobile" : [
-         "14",
-         "y"
-      ],
-      "op_mob" : [],
-      "ie" : [
-         11,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "p"
-      ],
-      "android" : []
-   },
-   "discovery" : {
-      "firefox" : [],
-      "blackberry" : [],
-      "android" : [],
-      "ie" : [],
-      "op_mob" : [],
-      "and_chr" : [],
-      "ios_saf" : []
-   },
-   "webaudio" : {
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [],
-      "blackberry" : [],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "ie" : [],
-      "op_mob" : [],
-      "op_mobile" : [],
-      "ios_saf" : [
-         6,
+         "10",
          "y"
       ]
    },
    "manifestjson" : {
-      "ios_saf" : [],
-      "android" : [],
-      "ie" : [],
-      "op_mob" : [],
-      "and_chr" : [],
       "blackberry" : [],
-      "firefox" : []
-   },
-   "css-3d" : {
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         3,
-         "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "op_mobile" : [
-         "14",
-         "y"
-      ],
-      "ios_saf" : [
-         3.2,
-         "y"
-      ],
+      "firefox" : [],
+      "ios_saf" : [],
       "op_mob" : [],
+      "android" : [],
       "and_chr" : [
-         29,
+         "39",
          "y"
       ],
-      "ie" : [
-         10,
-         "p"
-      ]
+      "ie" : []
    },
    "autocomplete" : {
       "and_chr" : [
@@ -605,134 +110,501 @@
          "y"
       ]
    },
-   "inputpattern" : {
+   "cryptokey" : {
+      "and_chr" : [],
+      "ie" : [],
+      "blackberry" : [],
       "ios_saf" : [],
+      "firefox" : [],
+      "android" : [],
+      "op_mob" : []
+   },
+   "sensors" : {
+      "firefox" : [],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "op_mob" : [],
+      "android" : [],
+      "and_chr" : [],
+      "ie" : []
+   },
+   "wi-local" : {
+      "ie" : [],
+      "and_chr" : [],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "firefox" : [],
+      "android" : [],
+      "op_mob" : []
+   },
+   "filereader" : {
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ios_saf" : [
+         "6.0",
+         "y"
+      ],
+      "android" : [
+         "3",
+         "y"
+      ],
       "op_mob" : [
+         "11.1",
+         "y"
+      ],
+      "op_mobile" : [
+         "12",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ]
+   },
+   "intents" : {
+      "op_mob" : [],
+      "android" : [],
+      "ios_saf" : [],
+      "blackberry" : [],
+      "firefox" : [],
+      "and_chr" : [],
+      "ie" : []
+   },
+   "fullscreen" : {
+      "blackberry" : [
+         "10",
+         "p"
+      ],
+      "firefox" : [
+         "32",
+         "p"
+      ],
+      "op_mobile" : [
+         "14",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
          "11",
          "y"
       ],
+      "ios_saf" : [],
+      "android" : [],
+      "op_mob" : [
+         "24",
+         "y"
+      ]
+   },
+   "filewrite" : {
+      "and_chr" : [
+         "38",
+         "y"
+      ],
       "ie" : [],
+      "android" : [],
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "ios_saf" : [],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "firefox" : []
+   },
+   "aria" : {
+      "op_mob" : [
+         "10",
+         "p"
+      ],
+      "android" : [
+         "37",
+         "p"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "p"
+      ],
+      "blackberry" : [],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "p"
+      ]
+   },
+   "background-sync" : {
+      "android" : [],
+      "op_mob" : [],
+      "ios_saf" : [],
+      "blackberry" : [],
+      "firefox" : [],
+      "and_chr" : [],
+      "ie" : []
+   },
+   "animation-timing" : {
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "op_mobile" : [
+         "14",
+         "y"
+      ],
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ],
+      "ios_saf" : [
+         "6.0",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ]
+   },
+   "flexbox" : {
+      "op_mob" : [
+         "12.1",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "ios_saf" : [
+         "7.0",
+         "y"
+      ],
+      "ie" : [
+         "11",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ]
+   },
+   "recording" : {
+      "and_chr" : [],
+      "ie" : [],
+      "ios_saf" : [],
+      "blackberry" : [],
+      "firefox" : [],
+      "op_mob" : [],
+      "android" : []
+   },
+   "online" : {
       "and_chr" : [
          "18",
          "y"
       ],
-      "android" : [],
-      "blackberry" : [
-         "4.7.1",
+      "ie" : [
+         "8",
+         "p"
+      ],
+      "android" : [
+         "2.2",
          "y"
       ],
-      "firefox" : [
-         "4",
-         "p"
-      ]
-   },
-   "pointer-events" : {
+      "op_mob" : [],
       "blackberry" : [],
       "ios_saf" : [],
-      "op_mobile" : [],
-      "ie" : [
-         11,
-         "y"
-      ],
-      "op_mob" : [],
-      "and_chr" : [],
-      "firefox" : [],
-      "android" : []
+      "firefox" : []
    },
-   "iframe-sandbox" : {
-      "ios_saf" : [
-         4.2,
-         "y"
-      ],
-      "op_mob" : [],
-      "ie" : [
-         10,
-         "y"
-      ],
+   "css-touch-action" : {
       "and_chr" : [
-         29,
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "10",
          "y"
       ],
       "android" : [
-         2.2,
+         "37",
          "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ]
-   },
-   "aria" : {
-      "blackberry" : [],
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "ios_saf" : [
-         3.2,
-         "p"
-      ],
-      "android" : [
-         4.4,
-         "p"
       ],
       "op_mob" : [
-         12.1,
-         "p"
+         "24",
+         "y"
       ],
+      "firefox" : [],
+      "blackberry" : [],
+      "ios_saf" : []
+   },
+   "cors" : {
       "ie" : [
-         8,
+         "10",
          "y"
       ],
       "and_chr" : [
-         29,
+         "38",
+         "y"
+      ],
+      "op_mob" : [
+         "12",
+         "y"
+      ],
+      "android" : [
+         "2.1",
+         "y"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "y"
+      ],
+      "op_mobile" : [
+         "12",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ]
+   },
+   "svg12" : {
+      "op_mob" : [
+         "10",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "op_mobile" : [
+         "11",
+         "y"
+      ]
+   },
+   "messaging" : {
+      "blackberry" : [],
+      "firefox" : [],
+      "ios_saf" : [],
+      "op_mob" : [],
+      "android" : [],
+      "ie" : [],
+      "and_chr" : []
+   },
+   "battery" : {
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [],
+      "op_mob" : [],
+      "android" : [],
+      "ios_saf" : [],
+      "blackberry" : [],
+      "firefox" : [
+         "32",
          "p"
       ]
    },
-   "cryptokey" : {
-      "ie" : [],
-      "and_chr" : [],
-      "op_mob" : [],
-      "android" : [],
-      "ios_saf" : [],
+   "srcset" : {
+      "ios_saf" : [
+         "8",
+         "p"
+      ],
+      "blackberry" : [],
       "firefox" : [],
-      "blackberry" : []
+      "android" : [
+         "37",
+         "y"
+      ],
+      "op_mob" : [
+         "24",
+         "p"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : []
    },
-   "contacts" : {
-      "android" : [],
-      "and_chr" : [],
-      "ie" : [],
-      "op_mob" : [],
-      "ios_saf" : [],
-      "firefox" : [],
-      "blackberry" : []
-   },
-   "getusermedia" : {
+   "geolocation" : {
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
       "op_mobile" : [
          "11",
          "y"
       ],
-      "ios_saf" : [],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "y"
+      ],
+      "android" : [
+         "2.1",
+         "y"
+      ],
       "op_mob" : [
-         12.1,
+         "11",
+         "y"
+      ]
+   },
+   "pointer-events" : {
+      "ie" : [
+         "11",
+         "y"
+      ],
+      "and_chr" : [],
+      "android" : [],
+      "op_mob" : [],
+      "ios_saf" : [],
+      "op_mobile" : [],
+      "firefox" : [],
+      "blackberry" : []
+   },
+   "discovery" : {
+      "ie" : [],
+      "and_chr" : [],
+      "ios_saf" : [],
+      "blackberry" : [],
+      "firefox" : [],
+      "op_mob" : [],
+      "android" : []
+   },
+   "eventsource" : {
+      "ios_saf" : [
+         "4.0",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ],
+      "op_mob" : [
+         "11.1",
          "y"
       ],
       "and_chr" : [
-         29,
+         "38",
          "y"
       ],
       "ie" : [],
-      "blackberry" : [
-         10,
+      "firefox" : [
+         "32",
          "y"
       ],
-      "android" : [],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "op_mobile" : [
+         "11",
+         "y"
+      ]
+   },
+   "css-rounded" : {
+      "blackberry" : [
+         "10",
+         "y"
+      ],
       "firefox" : [
-         24,
+         "32",
+         "y"
+      ],
+      "op_mobile" : [
+         "11",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "y"
+      ],
+      "android" : [
+         "2.1",
+         "y"
+      ],
+      "op_mob" : [
+         "11",
          "y"
       ]
    },
@@ -754,787 +626,773 @@
          "y"
       ]
    },
-   "setimmediate" : {
-      "android" : [],
-      "op_mob" : [],
-      "ie" : [
+   "inputdate" : {
+      "op_mobile" : [
+         "11",
+         "y"
+      ],
+      "blackberry" : [
          "10",
          "y"
       ],
-      "and_chr" : [],
-      "ios_saf" : [],
       "firefox" : [],
-      "blackberry" : []
-   },
-   "postmessage" : {
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "ie" : [
-         11,
+      "android" : [
+         "37",
          "y"
       ],
       "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "android" : [
-         2.1,
+         "10",
          "y"
       ],
       "ios_saf" : [
-         3.2,
+         "5.0",
+         "y"
+      ],
+      "ie" : [],
+      "and_chr" : [
+         "38",
          "y"
       ]
    },
-   "quota" : {
-      "firefox" : [],
+   "beacon" : {
       "blackberry" : [],
-      "and_chr" : [
-         "18",
-         "y"
-      ],
-      "ie" : [],
-      "op_mob" : [],
-      "android" : [],
-      "ios_saf" : []
-   },
-   "css-will-change" : {
-      "firefox" : [],
-      "blackberry" : [],
-      "ie" : [],
-      "op_mob" : [],
-      "and_chr" : [
-         "36",
-         "y"
-      ],
-      "android" : [],
-      "ios_saf" : []
-   },
-   "filesystem" : {
-      "firefox" : [],
-      "android" : [],
-      "blackberry" : [
-         10,
-         "y"
+      "firefox" : [
+         "31",
+         "p"
       ],
       "ios_saf" : [],
+      "op_mob" : [],
+      "android" : [],
+      "and_chr" : [],
+      "ie" : []
+   },
+   "indexeddb" : {
+      "blackberry" : [
+         "10",
+         "p"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
       "op_mobile" : [
          "14",
          "y"
       ],
-      "op_mob" : [],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "ie" : []
-   },
-   "css-font-loading" : {
-      "ie" : [],
-      "and_chr" : [
-         "35",
-         "y"
-      ],
-      "op_mob" : [],
-      "android" : [],
-      "ios_saf" : [],
-      "firefox" : [],
-      "blackberry" : []
-   },
-   "messaging" : {
-      "blackberry" : [],
-      "firefox" : [],
-      "ios_saf" : [],
-      "android" : [],
-      "op_mob" : [],
-      "ie" : [],
-      "and_chr" : []
-   },
-   "inputmode" : {},
-   "cors" : {
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "and_chr" : [
-         29,
+      "android" : [
+         "37",
          "y"
       ],
       "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "ie" : [
-         10,
+         "24",
          "y"
       ],
       "ios_saf" : [
-         3.2,
+         "8",
+         "p"
+      ],
+      "and_chr" : [
+         "38",
          "y"
+      ],
+      "ie" : [
+         "10",
+         "p"
+      ]
+   },
+   "push" : {
+      "and_chr" : [],
+      "ie" : [],
+      "firefox" : [],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "android" : [],
+      "op_mob" : []
+   },
+   "getusermedia" : {
+      "ios_saf" : [],
+      "op_mob" : [
+         "12",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "op_mobile" : [
+         "11",
+         "y"
+      ]
+   },
+   "notification" : {
+      "and_chr" : [],
+      "ie" : [],
+      "ios_saf" : [],
+      "android" : [
+         "37",
+         "p"
+      ],
+      "op_mob" : [
+         "24",
+         "p"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "op_mobile" : []
+   },
+   "filesystem" : {
+      "op_mobile" : [
+         "14",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [],
+      "ie" : [],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "android" : [],
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "ios_saf" : []
+   },
+   "css-snappoints" : {
+      "ie" : [
+         "10",
+         "p"
+      ],
+      "and_chr" : [],
+      "android" : [],
+      "op_mob" : [],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "firefox" : []
+   },
+   "webanimations" : {
+      "ie" : [],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ],
+      "firefox" : [],
+      "blackberry" : [],
+      "ios_saf" : []
+   },
+   "indieui" : {
+      "android" : [],
+      "op_mob" : [],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "firefox" : [],
+      "ie" : [],
+      "and_chr" : []
+   },
+   "datalist" : {
+      "ios_saf" : [],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ],
+      "op_mob" : [
+         "10",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "p"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ]
+   },
+   "user-timing" : {
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "firefox" : [],
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ]
+   },
+   "websockets" : {
+      "android" : [
+         "37",
+         "y"
+      ],
+      "op_mob" : [
+         "12.1",
+         "y"
+      ],
+      "ios_saf" : [
+         "6.0",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "op_mobile" : [
+         "12.1",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ]
+   },
+   "proximity" : {
+      "ie" : [],
+      "and_chr" : [],
+      "op_mob" : [],
+      "android" : [],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "firefox" : [
+         "32",
+         "y"
+      ]
+   },
+   "gallery" : {
+      "and_chr" : [],
+      "ie" : [],
+      "blackberry" : [],
+      "firefox" : [],
+      "ios_saf" : [],
+      "op_mob" : [],
+      "android" : []
+   },
+   "webworkers" : {
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "op_mob" : [
+         "11",
+         "y"
+      ],
+      "android" : [
+         "2.1",
+         "y"
+      ],
+      "ios_saf" : [
+         "5.0",
+         "y"
+      ],
+      "op_mobile" : [
+         "11",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ]
+   },
+   "ime" : {
+      "ie" : [
+         "11",
+         "y"
+      ],
+      "and_chr" : [],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "firefox" : [],
+      "op_mob" : [],
+      "android" : []
+   },
+   "contacts" : {
+      "android" : [],
+      "op_mob" : [],
+      "firefox" : [],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "ie" : [],
+      "and_chr" : []
+   },
+   "inputpattern" : {
+      "ie" : [],
+      "and_chr" : [
+         "18",
+         "y"
+      ],
+      "blackberry" : [
+         "4.7.1",
+         "y"
+      ],
+      "ios_saf" : [],
+      "firefox" : [
+         "4",
+         "p"
+      ],
+      "android" : [],
+      "op_mob" : [
+         "11",
+         "y"
+      ]
+   },
+   "picture" : {
+      "blackberry" : [],
+      "ios_saf" : [],
+      "firefox" : [],
+      "android" : [],
+      "op_mob" : [],
+      "ie" : [],
+      "and_chr" : [
+         "38",
+         "y"
+      ]
+   },
+   "css-transitions" : {
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "op_mobile" : [
+         "11",
+         "y"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "y"
+      ],
+      "op_mob" : [
+         "10",
+         "y"
+      ],
+      "android" : [
+         "2.1",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ]
+   },
+   "mediaqueries" : {
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "op_mob" : [
+         "10",
+         "y"
+      ],
+      "android" : [
+         "2.1",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ]
+   },
+   "audio" : {
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "android" : [
+         "2.3",
+         "y"
+      ],
+      "op_mob" : [
+         "11",
+         "y"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "op_mobile" : [
+         "11",
+         "y"
+      ]
+   },
+   "viewport-units" : {
+      "ie" : [
+         "10",
+         "p"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "p"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "ios_saf" : [
+         "8",
+         "y"
+      ]
+   },
+   "accelerometer" : {
+      "ie" : [
+         "11",
+         "p"
+      ],
+      "and_chr" : [
+         "38",
+         "p"
+      ],
+      "ios_saf" : [
+         "4.2",
+         "p"
+      ],
+      "op_mob" : [
+         "12",
+         "y"
+      ],
+      "android" : [
+         "3",
+         "p"
       ],
       "op_mobile" : [
          "12",
          "y"
       ],
       "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         2.1,
-         "y"
-      ]
-   },
-   "datalist" : {
-      "blackberry" : [
-         10,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "ios_saf" : [],
-      "android" : [],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "ie" : [
-         10,
+         "32",
          "p"
       ],
-      "op_mob" : [
-         10,
+      "blackberry" : [
+         "10",
+         "p"
+      ]
+   },
+   "perf-timeline" : {
+      "and_chr" : [
+         "30",
+         "y"
+      ],
+      "ie" : [
+         "11",
          "y"
       ]
    },
-   "woff2" : {
-      "ios_saf" : [],
-      "op_mob" : [],
+   "res-timing" : {
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ],
+      "firefox" : [],
+      "blackberry" : [],
+      "ios_saf" : []
+   },
+   "webaudio" : {
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [],
+      "op_mobile" : [],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
       "ie" : [],
-      "and_chr" : [],
       "android" : [],
-      "blackberry" : [],
-      "firefox" : []
-   },
-   "p2p" : {
-      "blackberry" : [],
-      "op_mobile" : [
-         "11",
-         "y"
-      ],
-      "ios_saf" : [],
-      "op_mob" : [],
-      "ie" : [],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : []
-   },
-   "canvas" : {
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "op_mobile" : [
-         "11",
+      "op_mob" : [
+         "24",
          "y"
       ],
       "ios_saf" : [
-         3.2,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "ie" : [
-         9,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         3,
-         "y"
-      ]
-   },
-   "video" : {
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "ios_saf" : [
-         3.2,
-         "y"
-      ],
-      "op_mobile" : [
-         "11",
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "ie" : [
-         9,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         2.3,
+         "6.0",
          "y"
       ]
    },
    "systems-info" : {},
-   "mediacapabilities" : {},
-   "csp" : {
+   "video" : {
       "firefox" : [
-         24,
+         "32",
          "y"
       ],
       "blackberry" : [
-         10,
-         "y"
-      ],
-      "android" : [
-         4.4,
-         "y"
-      ],
-      "ie" : [
-         10,
-         "p"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "op_mob" : [],
-      "ios_saf" : [
-         6,
-         "y"
-      ]
-   },
-   "nfc" : {
-      "firefox" : [],
-      "blackberry" : [],
-      "android" : [],
-      "ie" : [],
-      "op_mob" : [],
-      "and_chr" : [],
-      "ios_saf" : []
-   },
-   "contacts-sys" : {},
-   "ime" : {
-      "android" : [],
-      "ie" : [
-         "11",
-         "y"
-      ],
-      "and_chr" : [],
-      "op_mob" : [],
-      "ios_saf" : [],
-      "firefox" : [],
-      "blackberry" : []
-   },
-   "calendar" : {
-      "firefox" : [],
-      "blackberry" : [],
-      "android" : [],
-      "op_mob" : [],
-      "ie" : [],
-      "and_chr" : [],
-      "ios_saf" : []
-   },
-   "streamproc" : {
-      "ie" : [],
-      "and_chr" : [],
-      "op_mob" : [],
-      "android" : [],
-      "ios_saf" : [],
-      "firefox" : [],
-      "blackberry" : []
-   },
-   "css-2d" : {
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "ie" : [
-         9,
-         "y"
-      ],
-      "op_mobile" : [
-         "11",
-         "y"
-      ],
-      "ios_saf" : [
-         3.2,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         2.1,
-         "y"
-      ]
-   },
-   "mediaqueries4" : {},
-   "canvasproxy" : {},
-   "speechinput" : {
-      "firefox" : [],
-      "android" : [],
-      "blackberry" : [],
-      "ie" : [],
-      "op_mob" : [],
-      "and_chr" : [
-         29,
-         "p"
-      ],
-      "ios_saf" : [
-         7,
-         "p"
-      ],
-      "op_mobile" : []
-   },
-   "screenlock" : {
-      "firefox" : [
-         "14",
-         "y"
-      ],
-      "ie" : [
-         "11",
-         "y"
-      ]
-   },
-   "manifest" : {
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "ie" : [
-         10,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "op_mobile" : [
-         "11",
-         "y"
-      ],
-      "ios_saf" : [
-         3.2,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         2.1,
-         "y"
-      ]
-   },
-   "recording" : {
-      "firefox" : [],
-      "blackberry" : [],
-      "ie" : [],
-      "and_chr" : [],
-      "op_mob" : [],
-      "android" : [],
-      "ios_saf" : []
-   },
-   "crypto" : {
-      "ios_saf" : [],
-      "android" : [],
-      "and_chr" : [
-         "25",
-         "p"
-      ],
-      "ie" : [],
-      "op_mob" : [],
-      "blackberry" : [],
-      "firefox" : [
-         "19",
-         "p"
-      ]
-   },
-   "css-rounded" : {
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         2.1,
-         "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "ie" : [
-         9,
-         "y"
-      ],
-      "op_mobile" : [
-         "11",
-         "y"
-      ],
-      "ios_saf" : [
-         3.2,
-         "y"
-      ]
-   },
-   "eventsource" : {
-      "android" : [
-         4.4,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "ie" : [],
-      "ios_saf" : [
-         4,
-         "y"
-      ],
-      "op_mobile" : [
-         "11",
-         "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ]
-   },
-   "eme" : {
-      "blackberry" : [],
-      "firefox" : [],
-      "ios_saf" : [],
-      "ie" : [
-         "11",
-         "y"
-      ],
-      "op_mob" : [],
-      "and_chr" : [],
-      "android" : []
-   },
-   "srcset" : {
-      "firefox" : [],
-      "blackberry" : [],
-      "ie" : [],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "op_mob" : [],
-      "android" : [],
-      "ios_saf" : []
-   },
-   "serviceworker" : {
-      "firefox" : [],
-      "blackberry" : [],
-      "android" : [],
-      "ie" : [],
-      "op_mob" : [],
-      "and_chr" : [],
-      "ios_saf" : []
-   },
-   "webworkers" : {
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         2.1,
-         "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "op_mobile" : [
-         "11",
-         "y"
-      ],
-      "ios_saf" : [
-         5,
-         "y"
-      ],
-      "ie" : [
-         10,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ]
-   },
-   "css-device-adapt" : {
-      "firefox" : [],
-      "blackberry" : [],
-      "and_chr" : [],
-      "ie" : [
          "10",
-         "p"
-      ],
-      "op_mob" : [
-         "11.1",
          "y"
       ],
-      "android" : [],
-      "ios_saf" : []
-   },
-   "lazy" : {
-      "ie" : [
+      "op_mobile" : [
          "11",
-         "p"
-      ],
-      "op_mob" : [],
-      "and_chr" : [],
-      "android" : [],
-      "ios_saf" : [],
-      "firefox" : [],
-      "blackberry" : []
-   },
-   "inputhint" : {
-      "ios_saf" : [
-         3.2,
-         "y"
-      ],
-      "android" : [
-         2.1,
-         "y"
-      ],
-      "ie" : [
-         10,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
          "y"
       ],
       "and_chr" : [
-         29,
+         "38",
          "y"
       ],
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ]
-   },
-   "srcN" : {
-      "firefox" : [],
-      "blackberry" : [],
-      "android" : [],
-      "and_chr" : [],
-      "ie" : [],
-      "op_mob" : [],
-      "ios_saf" : []
-   },
-   "sensors" : {
-      "firefox" : [],
-      "blackberry" : [],
-      "android" : [],
-      "and_chr" : [],
-      "ie" : [],
-      "op_mob" : [],
-      "ios_saf" : []
-   },
-   "res-timing" : {
-      "blackberry" : [],
-      "firefox" : [],
-      "ios_saf" : [],
       "ie" : [
          "10",
          "y"
       ],
-      "and_chr" : [
-         "26",
+      "op_mob" : [
+         "11",
          "y"
       ],
-      "op_mob" : [],
-      "android" : []
-   },
-   "smooth-scroll" : {
-      "firefox" : [],
-      "blackberry" : [],
-      "op_mob" : [],
-      "ie" : [],
-      "and_chr" : [],
-      "android" : [],
-      "ios_saf" : []
-   },
-   "filewrite" : {
-      "firefox" : [],
-      "blackberry" : [
-         10,
-         "y"
-      ],
-      "ie" : [],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "op_mob" : [],
-      "android" : [],
-      "ios_saf" : []
-   },
-   "online" : {
-      "blackberry" : [],
-      "firefox" : [],
-      "ios_saf" : [],
       "android" : [
-         "2.2",
+         "2.3",
+         "y"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "y"
+      ]
+   },
+   "html5-download" : {
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "ios_saf" : [],
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : []
+   },
+   "inputtext" : {
+      "ie" : [
+         "10",
          "y"
       ],
       "and_chr" : [
          "18",
          "y"
       ],
-      "ie" : [
-         "8",
+      "op_mob" : [
+         "11",
+         "y"
+      ],
+      "android" : [
+         "3",
          "p"
       ],
-      "op_mob" : []
-   },
-   "inputdate" : {
-      "blackberry" : [
-         10,
-         "y"
+      "ios_saf" : [
+         "5",
+         "p"
       ],
       "op_mobile" : [
          "11",
          "y"
       ],
-      "ios_saf" : [
-         5,
+      "firefox" : [
+         "4",
+         "p"
+      ],
+      "blackberry" : [
+         "4.7.1",
+         "p"
+      ]
+   },
+   "networkapi" : {
+      "blackberry" : [
+         "10",
          "y"
       ],
-      "and_chr" : [
-         29,
+      "firefox" : [
+         "10",
+         "p"
+      ],
+      "op_mobile" : [],
+      "ios_saf" : [],
+      "android" : [
+         "2.2",
+         "p"
+      ],
+      "op_mob" : [],
+      "and_chr" : [],
+      "ie" : []
+   },
+   "xhr2" : {
+      "op_mobile" : [
+         "12",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
          "y"
       ],
       "op_mob" : [
-         10,
+         "12",
          "y"
       ],
-      "ie" : [],
-      "firefox" : [],
       "android" : [
-         4.4,
-         "y"
-      ]
-   },
-   "animation-timing" : {
-      "android" : [
-         4.4,
-         "y"
-      ],
-      "firefox" : [
-         24,
+         "3",
          "y"
       ],
       "ios_saf" : [
-         6,
-         "y"
-      ],
-      "op_mobile" : [
-         "14",
-         "y"
-      ],
-      "and_chr" : [
-         29,
+         "5.0",
          "y"
       ],
       "ie" : [
-         10,
+         "10",
          "y"
       ],
-      "op_mob" : [],
-      "blackberry" : [
-         10,
+      "and_chr" : [
+         "38",
          "y"
       ]
    },
-   "inputaccept" : {
-      "firefox" : [
-         "9",
-         "p"
+   "streamproc" : {
+      "android" : [],
+      "op_mob" : [],
+      "ios_saf" : [],
+      "blackberry" : [],
+      "firefox" : [],
+      "and_chr" : [],
+      "ie" : []
+   },
+   "css-border" : {
+      "op_mob" : [
+         "24",
+         "y"
       ],
       "android" : [
-         "3.0",
-         "p"
+         "37",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
       ],
       "blackberry" : [
          "10",
@@ -1544,207 +1402,793 @@
          "6.0",
          "y"
       ],
+      "ie" : [
+         "11",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ]
+   },
+   "css-boxshadow" : {
+      "op_mob" : [
+         "11",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "ios_saf" : [
+         "4.0",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ]
+   },
+   "canvasproxy" : {},
+   "autocomplete-cc" : {
+      "and_chr" : [
+         "31",
+         "y"
+      ]
+   },
+   "getusermedia-cap" : {
+      "ie" : [],
+      "and_chr" : [],
+      "blackberry" : [],
+      "firefox" : [],
+      "ios_saf" : [],
+      "op_mob" : [],
+      "android" : []
+   },
+   "smooth-scroll" : {
+      "and_chr" : [],
+      "ie" : [],
+      "op_mob" : [],
+      "android" : [],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "firefox" : []
+   },
+   "css-3d" : {
+      "ie" : [
+         "10",
+         "p"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "android" : [
+         "3",
+         "y"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "y"
+      ],
       "op_mobile" : [
          "14",
          "y"
       ],
-      "and_chr" : [
-         "18",
+      "firefox" : [
+         "32",
          "y"
       ],
+      "blackberry" : [
+         "10",
+         "y"
+      ]
+   },
+   "websql" : {
+      "op_mobile" : [
+         "11",
+         "y"
+      ],
+      "firefox" : [],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "op_mob" : [
+         "11",
+         "y"
+      ],
+      "android" : [
+         "2.1",
+         "y"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "y"
+      ],
+      "ie" : [],
+      "and_chr" : [
+         "38",
+         "y"
+      ]
+   },
+   "runtime" : {},
+   "contacts-sys" : {},
+   "humidity" : {
+      "ie" : [],
+      "and_chr" : [],
       "op_mob" : [],
+      "android" : [],
+      "firefox" : [],
+      "blackberry" : [],
+      "ios_saf" : []
+   },
+   "svg2" : {
+      "and_chr" : [],
+      "ie" : [],
+      "blackberry" : [],
+      "firefox" : [],
+      "ios_saf" : [],
+      "op_mob" : [],
+      "android" : []
+   },
+   "postmessage" : {
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "y"
+      ],
+      "android" : [
+         "2.1",
+         "y"
+      ],
+      "op_mob" : [
+         "10",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "p"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ]
+   },
+   "iframe-sandbox" : {
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "android" : [
+         "2.2",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "ios_saf" : [
+         "4.2",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ]
+   },
+   "woff2" : {
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [],
+      "ios_saf" : [],
+      "blackberry" : [],
+      "firefox" : [],
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ]
+   },
+   "vibration" : {
+      "ie" : [],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ],
+      "ios_saf" : [],
+      "op_mobile" : [],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ]
+   },
+   "canvas" : {
+      "op_mob" : [
+         "10",
+         "y"
+      ],
+      "android" : [
+         "3",
+         "y"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "op_mobile" : [
+         "11",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ]
+   },
+   "wake-lock" : {
+      "op_mob" : [],
+      "android" : [],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "firefox" : [],
+      "and_chr" : [],
       "ie" : []
    },
-   "perf-timeline" : {
+   "eme" : {
+      "and_chr" : [
+         "32",
+         "y"
+      ],
       "ie" : [
          "11",
          "y"
       ],
-      "and_chr" : [
-         "30",
-         "y"
-      ]
+      "android" : [],
+      "op_mob" : [],
+      "firefox" : [],
+      "blackberry" : [],
+      "ios_saf" : []
    },
-   "flexbox" : {
-      "ios_saf" : [
-         7,
-         "y"
-      ],
-      "ie" : [
-         11,
-         "y"
-      ],
+   "css-font-loading" : {
+      "ie" : [],
       "and_chr" : [
-         29,
+         "35",
          "y"
       ],
+      "ios_saf" : [],
+      "blackberry" : [],
+      "firefox" : [],
+      "android" : [],
+      "op_mob" : []
+   },
+   "visibilitychange" : {
       "op_mob" : [
-         12.1,
+         "12.1",
          "y"
       ],
       "android" : [
-         4.4,
+         "37",
+         "y"
+      ],
+      "ios_saf" : [
+         "7.0",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [
+         "32",
          "y"
       ],
       "blackberry" : [
-         10,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "p"
-      ]
-   },
-   "webstorage" : {
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         2.1,
-         "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "ie" : [
-         8,
-         "y"
-      ],
-      "ios_saf" : [
-         3.2,
-         "y"
-      ],
-      "op_mobile" : [
-         "11",
-         "y"
-      ]
-   },
-   "css-transitions" : {
-      "ie" : [
-         10,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "op_mobile" : [
-         "11",
-         "y"
-      ],
-      "ios_saf" : [
-         3.2,
-         "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "android" : [
-         2.1,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ]
-   },
-   "websockets" : {
-      "android" : [
-         4.4,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "ie" : [
-         10,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "ios_saf" : [
-         6,
+         "10",
          "y"
       ],
       "op_mobile" : [
          "12.1",
          "y"
+      ]
+   },
+   "namedwebsockets" : {
+      "op_mob" : [],
+      "android" : [],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "firefox" : [],
+      "and_chr" : [],
+      "ie" : []
+   },
+   "inputmode" : {},
+   "css-device-adapt" : {
+      "and_chr" : [],
+      "ie" : [
+         "10",
+         "p"
       ],
-      "blackberry" : [
-         7,
+      "blackberry" : [],
+      "firefox" : [],
+      "ios_saf" : [],
+      "android" : [],
+      "op_mob" : [
+         "11.1",
          "y"
       ]
    },
-   "svg12" : {
+   "imagecapture" : {
+      "and_chr" : [],
+      "ie" : [],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "firefox" : [],
+      "android" : [],
+      "op_mob" : []
+   },
+   "manifest" : {
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ],
       "ios_saf" : [
-         3.2,
+         "3.2",
+         "y"
+      ],
+      "op_mob" : [
+         "11",
+         "y"
+      ],
+      "android" : [
+         "2.1",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "op_mobile" : [
+         "11",
+         "y"
+      ]
+   },
+   "messaging-sys" : {},
+   "speechinput" : {
+      "op_mobile" : [],
+      "blackberry" : [],
+      "firefox" : [],
+      "ios_saf" : [
+         "7.0",
+         "p"
+      ],
+      "android" : [],
+      "op_mob" : [],
+      "ie" : [],
+      "and_chr" : [
+         "38",
+         "p"
+      ]
+   },
+   "nav-timing" : {
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "op_mobile" : [
+         "14",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ],
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "ios_saf" : [
+         "8",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ]
+   },
+   "touchevent" : {
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [
+         "32",
          "y"
       ],
       "op_mobile" : [
          "11",
          "y"
       ],
-      "ie" : [
-         9,
+      "ios_saf" : [
+         "3.2",
          "y"
       ],
       "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "blackberry" : [
-         7,
+         "11",
          "y"
       ],
       "android" : [
-         3,
+         "2.1",
          "y"
       ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : []
+   },
+   "nfc" : {
+      "op_mob" : [],
+      "android" : [],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "firefox" : [],
+      "and_chr" : [],
+      "ie" : []
+   },
+   "srcN" : {
+      "ie" : [],
+      "and_chr" : [],
+      "firefox" : [],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "android" : [],
+      "op_mob" : []
+   },
+   "crypto" : {
+      "blackberry" : [],
       "firefox" : [
-         24,
+         "19",
+         "p"
+      ],
+      "ios_saf" : [
+         "8",
+         "y"
+      ],
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "11",
+         "p"
+      ]
+   },
+   "screenlock" : {
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "11",
+         "y"
+      ],
+      "blackberry" : [],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "ios_saf" : [],
+      "android" : [],
+      "op_mob" : []
+   },
+   "serviceworker" : {
+      "blackberry" : [],
+      "ios_saf" : [],
+      "firefox" : [],
+      "op_mob" : [],
+      "android" : [],
+      "ie" : [],
+      "and_chr" : []
+   },
+   "setimmediate" : {
+      "and_chr" : [],
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "blackberry" : [],
+      "firefox" : [],
+      "ios_saf" : [],
+      "android" : [],
+      "op_mob" : []
+   },
+   "lazy" : {
+      "ie" : [
+         "11",
+         "p"
+      ],
+      "and_chr" : [],
+      "ios_saf" : [],
+      "blackberry" : [],
+      "firefox" : [],
+      "android" : [],
+      "op_mob" : []
+   },
+   "css-will-change" : {
+      "android" : [
+         "37",
+         "y"
+      ],
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "firefox" : [],
+      "blackberry" : [],
+      "ios_saf" : [],
+      "ie" : [],
+      "and_chr" : [
+         "38",
          "y"
       ]
    },
-   "picture" : {
-      "ios_saf" : [],
-      "ie" : [],
-      "op_mob" : [],
+   "subres-integrity" : {
       "and_chr" : [],
+      "ie" : [],
       "android" : [],
+      "op_mob" : [],
+      "ios_saf" : [],
       "blackberry" : [],
       "firefox" : []
    },
-   "mse" : {
+   "ambientlight" : {
+      "blackberry" : [],
+      "ios_saf" : [],
       "firefox" : [
-         "25",
+         "32",
+         "y"
+      ],
+      "android" : [],
+      "op_mob" : [],
+      "ie" : [],
+      "and_chr" : []
+   },
+   "mediaqueries4" : {},
+   "woff" : {
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "android" : [
+         "37",
+         "y"
+      ],
+      "op_mob" : [
+         "11",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "ios_saf" : [
+         "5.0",
+         "y"
+      ]
+   },
+   "calendar" : {
+      "and_chr" : [],
+      "ie" : [],
+      "blackberry" : [],
+      "firefox" : [],
+      "ios_saf" : [],
+      "android" : [],
+      "op_mob" : []
+   },
+   "mediacapabilities" : {},
+   "inputaccept" : {
+      "op_mobile" : [
+         "14",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [
+         "9",
          "p"
       ],
+      "ios_saf" : [
+         "6.0",
+         "y"
+      ],
+      "op_mob" : [],
+      "android" : [
+         "3.0",
+         "p"
+      ],
+      "ie" : [],
+      "and_chr" : [
+         "18",
+         "y"
+      ]
+   },
+   "css-size-adjust" : {
+      "android" : [],
+      "op_mob" : [],
+      "blackberry" : [],
+      "ios_saf" : [
+         "5.0",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "ie" : [],
+      "and_chr" : []
+   },
+   "csp" : {
+      "android" : [
+         "37",
+         "y"
+      ],
+      "op_mob" : [
+         "24",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "ios_saf" : [
+         "6.0",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "p"
+      ]
+   },
+   "webstorage" : {
+      "op_mobile" : [
+         "11",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "y"
+      ],
+      "android" : [
+         "2.1",
+         "y"
+      ],
+      "op_mob" : [
+         "11",
+         "y"
+      ],
+      "ie" : [
+         "10",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
+      ]
+   },
+   "mse" : {
       "ie" : [
          "11",
          "y"
@@ -1752,254 +2196,52 @@
       "and_chr" : [
          "23",
          "y"
-      ]
-   },
-   "touchevent" : {
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "ios_saf" : [
-         3.2,
-         "y"
-      ],
-      "op_mobile" : [
-         "11",
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "ie" : [],
-      "op_mob" : [
-         12.1,
-         "y"
       ],
       "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         2.1,
-         "y"
-      ]
-   },
-   "css-border" : {
-      "android" : [
-         4.4,
-         "y"
-      ],
-      "op_mob" : [
-         11,
+         "25",
          "p"
-      ],
-      "ie" : [
-         11,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "ios_saf" : [
-         6,
-         "y"
-      ],
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "blackberry" : [
-         10,
-         "y"
       ]
    },
-   "filereader" : {
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         3,
-         "y"
-      ],
-      "blackberry" : [
-         10,
-         "y"
-      ],
-      "ie" : [
-         10,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "op_mobile" : [
-         "12",
-         "y"
-      ],
-      "ios_saf" : [
-         6,
-         "y"
-      ]
-   },
-   "imagecapture" : {
+   "quota" : {
+      "blackberry" : [],
       "firefox" : [],
-      "blackberry" : [],
-      "op_mob" : [],
-      "ie" : [],
-      "and_chr" : [],
-      "android" : [],
-      "ios_saf" : []
-   },
-   "beacon" : {
-      "firefox" : [
-         "31",
-         "p"
-      ],
-      "blackberry" : [],
-      "and_chr" : [],
-      "ie" : [],
-      "op_mob" : [],
-      "android" : [],
-      "ios_saf" : []
-   },
-   "humidity" : {
       "ios_saf" : [],
-      "android" : [],
-      "and_chr" : [],
-      "ie" : [],
-      "op_mob" : [],
-      "blackberry" : [],
-      "firefox" : []
-   },
-   "intents" : {
-      "firefox" : [],
-      "blackberry" : [],
-      "and_chr" : [],
-      "ie" : [],
       "op_mob" : [],
       "android" : [],
-      "ios_saf" : []
-   },
-   "networkapi" : {
-      "op_mobile" : [],
-      "ios_saf" : [],
-      "and_chr" : [],
       "ie" : [],
-      "op_mob" : [],
-      "blackberry" : [
-         "10",
-         "y"
-      ],
-      "android" : [
-         "2.2",
-         "p"
-      ],
-      "firefox" : [
-         "10",
-         "p"
-      ]
-   },
-   "battery" : {
-      "ios_saf" : [],
-      "ie" : [],
-      "and_chr" : [],
-      "op_mob" : [],
-      "android" : [],
-      "blackberry" : [],
-      "firefox" : [
-         24,
-         "y"
-      ]
-   },
-   "inputtext" : {
-      "ios_saf" : [
-         "5",
-         "p"
-      ],
-      "op_mobile" : [
-         "11",
-         "y"
-      ],
-      "op_mob" : [
-         "11",
-         "y"
-      ],
       "and_chr" : [
          "18",
          "y"
+      ]
+   },
+   "inputhint" : {
+      "op_mob" : [
+         "11",
+         "y"
+      ],
+      "android" : [
+         "2.1",
+         "y"
+      ],
+      "blackberry" : [
+         "10",
+         "y"
+      ],
+      "firefox" : [
+         "32",
+         "y"
+      ],
+      "ios_saf" : [
+         "3.2",
+         "y"
+      ],
+      "and_chr" : [
+         "38",
+         "y"
       ],
       "ie" : [
          "10",
          "y"
-      ],
-      "blackberry" : [
-         "4.7.1",
-         "p"
-      ],
-      "android" : [
-         "3",
-         "p"
-      ],
-      "firefox" : [
-         "4",
-         "p"
       ]
-   },
-   "audio" : {
-      "firefox" : [
-         24,
-         "y"
-      ],
-      "android" : [
-         2.3,
-         "y"
-      ],
-      "blackberry" : [
-         7,
-         "y"
-      ],
-      "and_chr" : [
-         29,
-         "y"
-      ],
-      "op_mob" : [
-         12.1,
-         "y"
-      ],
-      "ie" : [
-         9,
-         "y"
-      ],
-      "op_mobile" : [
-         "11",
-         "y"
-      ],
-      "ios_saf" : [
-         3.2,
-         "y"
-      ]
-   },
-   "webanimations" : {
-      "and_chr" : [
-         "36",
-         "y"
-      ]
-   },
-   "gallery" : {
-      "blackberry" : [],
-      "firefox" : [],
-      "ios_saf" : [],
-      "op_mob" : [],
-      "ie" : [],
-      "and_chr" : [],
-      "android" : []
    }
 }

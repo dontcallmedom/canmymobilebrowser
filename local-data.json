@@ -74,5 +74,6 @@
 "wake-lock":{"*":0},
 "background-sync":{"*":0},
 "namedwebsockets":{"*":0},
-"indieui":{"*":0}
+"indieui":{"*":0},
+"presentation":{"*":0}
 }
