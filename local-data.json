@@ -75,5 +75,6 @@
 "namedwebsockets":{"*":0},
 "indieui":{"*":0},
 "presentation":{"*":0},
-"permissions":{"*":0}
+"permissions":{"*":0},
+"bluetooth":{"*":0}
 }
