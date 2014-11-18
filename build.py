@@ -15,7 +15,7 @@ localdata = json.loads(localdatasrc.read())
 browsers = ["ios_saf","blackberry", "ie", "firefox", "android", "op_mob", "and_chr"]
 browsersImages = { "ios_saf" : {"name": "Safari on iOS", "x":0,"y":0,"width":60,"height":60, "url":"safari.png"},
                    "blackberry": {"name": "Blackberry browser", "x":0,"y":75,"width":60,"height":49.5, "url":"blackberry.jpg", "caniusename": "bb"},
-                   "ie": {"name": "Internet Explorer on Windows Phone", "x":63,"y":70,"width":60,"height":60, "url":"ie.png"},
+                   "ie": {"name": "Internet Explorer on Windows Phone", "x":63,"y":70,"width":60,"height":60, "url":"ie.png", "caniusename": "ie_mob"},
                    "firefox": {"name": "Firefox mobile", "x":130,"y":70,"width":60,"height":60, "url":"firefox.png", "caniusename": "and_ff"},
                    "android": {"name": "Android browser", "x":65,"y":0,"width":60,"height":60, "url":"android.png"},
                    "op_mob":  {"name": "Opera mobile", "x":130,"y":0,"width":60,"height":60, "url":"opera.png"},
@@ -74,6 +74,7 @@ for feature,sourcelist in featuremap.iteritems():
                     min_version = 0
                     min_partial_version = 0
                     unsupported = False
+                    flag = False
                     if not caniuse["data"][sourcelist[0]]["stats"].has_key(caniusename):
                         continue
                     if type(caniuse["data"][sourcelist[0]]["stats"][caniusename]) == dict:
@@ -84,10 +85,15 @@ for feature,sourcelist in featuremap.iteritems():
                                 min_version =  min(min_version,version) if min_version else version
                             elif status[0] == "a":
                                 min_partial_version = min(min_partial_version,version) if min_partial_version else version
-                            elif status == "n":
+                            elif status[0] == "n" and len(status) > 1 and status[2] == "d":
+                                min_version = min(min_version,version) if min_version else version
+                                flag = True
+                            elif status[0] == "n":
                                 unsupported = True
-                            if min_version:
+                            if min_version and not flag:
                                 mergeddata[feature][b] =  [min_version, "y"]
+                            elif min_version and flag:
+                                mergeddata[feature][b] =  [min_version, "d"]
                             elif min_partial_version:
                                 mergeddata[feature][b] =  [min_partial_version, "p" ]
                             elif unsupported:
@@ -99,10 +105,15 @@ for feature,sourcelist in featuremap.iteritems():
                             min_version = version
                         elif status[0] == "a":
                             min_partial_version = version
+                        elif status[0] == "n" and len(status) > 1 and status[2] == "d":
+                            min_version = version
+                            flag = True
                         elif status[0] == "n":
                             unsupported = True
-                        if min_version:
+                        if min_version and not flag:
                             mergeddata[feature][b] =  [min_version, "y"]
+                        elif min_version and flag:
+                            mergeddata[feature][b] =  [min_version, "d"]
                         elif min_partial_version:
                             mergeddata[feature][b] =  [min_partial_version, "p" ]
                         elif unsupported:
@@ -125,6 +136,10 @@ for feature,sourcelist in featuremap.iteritems():
                     text = "Partial support in %s from version %s" % (bData["name"], mergeddata[feature][b][0])
                     className = "partial"
                     label = "<rect x='%s' y='%s' width='60' height='22' fill='#ff0' opacity='0.8'></rect><text x='%s' y='%s' class='versions'>%s+</text>" % (bData["x"], bData["y"] + bData["height"]/2, bData["x"] + 3, bData["y"] + bData["height"]/2 + 15, mergeddata[feature][b][0])
+                if mergeddata[feature][b][1] == "d":
+                    text = "Support in %s from version %s behind a flag" % (bData["name"], mergeddata[feature][b][0])
+                    className = "flag"
+                    label = "<rect x='%s' y='%s' width='60' height='22' fill='#aaf' opacity='0.8'></rect><text x='%s' y='%s' class='versions'>%s+</text>" % (bData["x"], bData["y"] + bData["height"]/2, bData["x"] + 3, bData["y"] + bData["height"]/2 + 15, mergeddata[feature][b][0])
                 else:
                     text = "Supported in %s from version %s" % (bData["name"],mergeddata[feature][b][0])
                     className =""
