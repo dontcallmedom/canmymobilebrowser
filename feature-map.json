@@ -116,5 +116,6 @@
 "namedwebsockets":[],
 "indieui":[],
 "presentation":[],
-"permissions":[]
+"permissions":[],
+"res-hints":[]
 }
