@@ -119,5 +119,6 @@
 "permissions":[],
 "res-hints":[],
 "bluetooth":[],
-"audio-output":[]
+"audio-output":[],
+"packaging":[]
 }
