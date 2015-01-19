@@ -76,5 +76,6 @@
 "indieui":{"*":0},
 "presentation":{"*":0},
 "permissions":{"*":0},
-"bluetooth":{"*":0}
+"bluetooth":{"*":0},
+"audio-output":{"*":0}
 }

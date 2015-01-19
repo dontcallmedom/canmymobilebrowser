@@ -118,5 +118,6 @@
 "presentation":[],
 "permissions":[],
 "res-hints":[],
-"bluetooth":[]
+"bluetooth":[],
+"audio-output":[]
 }
