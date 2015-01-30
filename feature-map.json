@@ -120,5 +120,7 @@
 "res-hints":[],
 "bluetooth":[],
 "audio-output":[],
-"packaging":[]
+"packaging":[],
+"frame-timing":[],
+"task-scheduler":[]
 }
