@@ -121,9 +121,9 @@ for feature,sourcelist in featuremap.iteritems():
     image.write("""<svg
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   width="123"
+   width="93"
    height="70"
-   viewBox="0 0 255 140"
+   viewBox="0 0 195 140"
    version="1.1">
      <style typ="text/css">.unknown, .not { opacity: 0.3 } .partial { opacity: 0.8} text.symbol { font-size:40px;} text.versions { font-size:20px;}</style>""")
     image.write("<title>Support for %s</title>" % (feature))
