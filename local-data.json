@@ -71,5 +71,6 @@
 "audio-output":{"*":0},
 "packaging":{"*":0},
 "frame-timing":{"*":0},
-"task-scheduler":{"*":0}
+"task-scheduler":{"*":0},
+"geofencing":{"*":0}
 }

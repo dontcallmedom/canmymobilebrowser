@@ -122,5 +122,6 @@
 "audio-output":[],
 "packaging":[],
 "frame-timing":[],
-"task-scheduler":[]
+"task-scheduler":[],
+"geofencing":[]
 }
