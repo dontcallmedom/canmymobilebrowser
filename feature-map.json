@@ -90,7 +90,7 @@
 "nfc":[],
 "serviceworker":["serviceworkers"],
 "lazy":[],
-"ime":[],
+"ime":["ime"],
 "imagecapture":[],
 "cryptokey":[],
 "getusermedia-cap":[],
