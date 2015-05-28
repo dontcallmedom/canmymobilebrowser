@@ -116,12 +116,15 @@
 "namedwebsockets":[],
 "indieui":[],
 "presentation":[],
-"permissions":[],
+"permissions":["permissions-api"],
 "res-hints":[],
 "bluetooth":[],
 "audio-output":[],
 "packaging":[],
 "frame-timing":[],
 "task-scheduler":[],
-"geofencing":[]
+    "geofencing":[],
+    "mediasession":[],
+    "webnfc":[],
+    "credential-management":[]
 }
